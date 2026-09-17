@@ -1,0 +1,129 @@
+{
+  "frame": {
+    "0": {
+	  "plane": {
+		"8": {
+		  "crtc": 0,
+		  "format": "AR24",
+		  "resource": "defaultPattern",
+		  "decType": "NONE",
+		  "tileMode": "LINEAR",
+		  "width": 1980,
+		  "height": 1088,
+		  "refresh": 60,
+		  "crtcX": 0,
+		  "crtcY": 0,
+		  "crtcWidth": 1980,
+		  "crtcHeight": 1088,
+		  "property": {
+			"LAYER_CROP": {
+			  "cropX": 30,
+			  "cropY": 4,
+			  "cropWidth": 1920,
+			  "cropHeight": 1080,
+			  "srcPanelWidth": 1980,
+			  "srcPanelHeight": 1088
+			}
+		  }
+		}
+	  },
+	  "connector": {
+		"0": {
+		  "crtc": 0,
+		  "format": "AR30",
+		  "tileMode": "LINEAR",
+		  "width": 2700,
+		  "height": 2600,
+		  "refresh": 60,
+		  "golden": {
+			"md5sum": "3e875ba06b0310de489a224baa95c7a3",
+			"crc": "not_support"
+		  }
+		}
+	  },
+	  "crtc": {
+		"0": {}
+	  }
+    },
+    "1": {
+	  "plane": {
+		"8": {
+		  "crtc": 0,
+		  "format": "AR24",
+		  "resource": "defaultPattern",
+		  "decType": "NONE",
+		  "tileMode": "LINEAR",
+		  "width": 1980,
+		  "height": 1088,
+		  "refresh": 60,
+		  "crtcX": 0,
+		  "crtcY": 0,
+		  "crtcWidth": 1980,
+		  "crtcHeight": 1088,
+		  "property": {
+			"LAYER_CROP": {
+				"globalDisable": 1
+			}
+		  }
+		}
+	  },
+	  "connector": {
+		"0": {
+		  "crtc": 0,
+		  "format": "AR30",
+		  "tileMode": "LINEAR",
+		  "width": 2700,
+		  "height": 2600,
+		  "refresh": 60,
+		  "golden": {
+			"md5sum": "3e875ba06b0310de489a224baa95c7a3",
+			"crc": "not_support"
+		  }
+		}
+	  },
+	  "crtc": {
+		"0": {}
+	  }
+    },
+    "2": {
+	  "plane": {
+		"8": {
+		  "crtc": 0,
+		  "format": "AR24",
+		  "resource": "defaultPattern",
+		  "decType": "NONE",
+		  "tileMode": "LINEAR",
+		  "width": 640,
+		  "height": 480,
+		  "refresh": 60,
+		  "crtcX": 0,
+		  "crtcY": 0,
+		  "crtcWidth": 640,
+		  "crtcHeight": 480,
+		  "property": {
+			"LAYER_GAMMA": {
+			  "mode": "170M"
+			}
+		  }
+		}
+	  },
+	  "connector": {
+		"0": {
+		  "crtc": 0,
+		  "format": "AR30",
+		  "tileMode": "LINEAR",
+		  "width": 640,
+		  "height": 480,
+		  "refresh": 60,
+		  "golden": {
+			"md5sum": "bfe08a6cae829b3e8adfd16acfb1831a",
+			"crc": "not_support"
+		  }
+		}
+	  },
+	  "crtc": {
+		"0": {}
+	  }
+    }
+  }
+}

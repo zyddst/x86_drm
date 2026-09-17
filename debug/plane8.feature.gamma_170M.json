@@ -1,0 +1,40 @@
+{
+  "plane": {
+    "8": {
+      "crtc": 0,
+      "format": "AR24",
+      "resource": "defaultPattern",
+      "decType": "NONE",
+      "tileMode": "LINEAR",
+      "width": 640,
+      "height": 480,
+      "refresh": 60,
+      "crtcX": 0,
+      "crtcY": 0,
+      "crtcWidth": 640,
+      "crtcHeight": 480,
+      "property": {
+        "LAYER_GAMMA": {
+          "mode": "170M"
+        }
+      }
+    }
+  },
+  "connector": {
+    "0": {
+      "crtc": 0,
+      "format": "AR30",
+      "tileMode": "LINEAR",
+      "width": 640,
+      "height": 480,
+      "refresh": 60,
+      "golden": {
+        "md5sum": "bfe08a6cae829b3e8adfd16acfb1831a",
+        "crc": "not_support"
+      }
+    }
+  },
+  "crtc": {
+    "0": {}
+  }
+}
