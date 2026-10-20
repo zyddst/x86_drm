@@ -1,0 +1,13 @@
+systemctl stop gdm
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x75800070 0x4 80
+sys_space_write.rb 0x75800170 0x4 80
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install vs drm
+insmod ../virtual_display/regionMem/regionMem.ko
+python3 ../virtual_display/setVD.py -V 0x75800000 -B 0x10000000 -W 11520 -H 2160 -offset 0
+cd drm-test
+dmtest -case auto_cases/test/ -o dump_dir -clear
+
+python3 ../virtual_display/saveFB.py -B 0x10000000 -W 11520 -H 2160 -P test10.bmp
