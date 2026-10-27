@@ -1,0 +1,19 @@
+
+source build3x.sh 0x20000019 PCIE_GEN6
+source driver_build_sample.sh
+make clean
+make install
+cd ../test
+cp -r ../src/bin/dc_lite_test .
+./copy_case.sh 0x20000019
+
+cat /proc/iomem
+insmod dc_lite.ko resMemBase=0x10000000(reserved iomem) resMemSize=0x10000000 regPhysBase=0xde000000(bar1) regPhysSize=0x30000
+
+//32.45
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+export LD_LIBRARY_PATH=/data/dpu/home/wanghualei/hualei_dev/SW/DPU/DCLite/src/bin:$LD_LIBRARY_PATH
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/DCLite/src/bin
+insmod dc_lite.ko resMemBase=0x10000000 resMemSize=0x10000000 regPhysBase=0x75000000 regPhysSize=0x00030000
+cd ../../test
+./dc_lite_test -c all -f case/list.txt

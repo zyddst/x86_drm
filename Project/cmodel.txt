@@ -1,0 +1,14 @@
+
+//build file not set behind p4 diectory
+
+./build_9x_cmodel.sh -C 0x2000001a -w 0x2000001a 
+
+//build after changing code
+source build_0x2000001a_linux_cmodel.sh
+
+export DC_EMULATOR_BUILD_DIR=/local/hualei/0x2000001a/build/sdk
+export LIBRARY_PATH=/local/hualei/0x2000001a/build/sdk
+export LD_LIBRARY_PATH=/local/hualei/0x2000001a/build/sdk
+
+./vs_dpu_test -c all -p case_9400 -s
+./vs_dpu_test -c all -p case_9400 -f list_debug.txt -s

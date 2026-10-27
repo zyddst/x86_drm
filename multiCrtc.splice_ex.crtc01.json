@@ -1,0 +1,72 @@
+{
+  "plane": {
+	"0": {
+	  "crtc": 0,
+	  "format": "AR24",
+	  "resource": "defaultPattern",
+	  "decType": "NONE",
+	  "tileMode": "LINEAR",
+	  "width": 640,
+	  "height": 480,
+	  "refresh": 60,
+	  "crtcX": 0,
+	  "crtcY": 0,
+	  "crtcWidth": 640,
+	  "crtcHeight": 480
+	},
+	"1": {
+	  "crtc": 1,
+	  "format": "AR24",
+	  "resource": "defaultPattern",
+	  "decType": "NONE",
+	  "tileMode": "LINEAR",
+	  "width": 640,
+	  "height": 480,
+	  "refresh": 60,
+	  "crtcX": 0,
+	  "crtcY": 0,
+	  "crtcWidth": 640,
+	  "crtcHeight": 480
+	}
+  },
+  "connector": {
+	"3": {
+	  "crtc": 0,
+	  "format": "AR30",
+	  "tileMode": "LINEAR",
+	  "width": 1280,
+	  "height": 480,
+	  "refresh": 60,
+	  "golden": {
+		"md5sum": "not_support",
+		"crc": "not_support"
+	  }
+	},
+	"4": {
+	  "crtc": 1,
+	  "format": "AR30",
+	  "tileMode": "LINEAR",
+	  "width": 640,
+	  "height": 480,
+	  "refresh": 60,
+	  "golden": {
+		"md5sum": "not_support",
+		"crc": "not_support"
+	  }
+	}
+  },
+  "crtc": {
+	"0": {
+	  "property": {
+		"SPLICE_MODE": {
+		  "spliceExEnable": 1,
+		  "spliceExDest": [0,0],
+		  "spliceDestEnableMask":"ofifo0, ofifo1",
+		  "spliceExSrcPanelWidth":[640, 640],
+		  "spliceExSrcPanelHeight":[480, 480]
+		}
+	  }
+	},
+	"1": {}
+  }
+}

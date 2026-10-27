@@ -1,0 +1,103 @@
+HOST_PC/FPGA_PC:192.168.33.106	root cheeseMe
+Bit_FPGA:192.168.33.112 root root
+Android Board:192.168.33.123
+
+/* c2c */
+./zturn -download a /bitfiles/GEN6/binbin/Android_test/gc8000_6_2_1_rc4t_android_fa_0306/VS_2VU440_BP_FA_TOP_pcie.bit
+./zturn -download b /bitfiles/GEN6/binbin/Android_test/0x20000014_dc9200l_rc0f_JSLT_701_android_fb_1120/vsi_2vu440_bp_fb.bit
+
+docker images	/* hwc_android_dc */ 
+docker run -it -d --name=lei_and -v /workspace/FPGA_DPU:/data/dpu  ef6fb8bcfa0b /bin/bash
+docker exec -it 74d15d232768 /bin/bash
+
+/* expand */
+docker stop lei_and
+docker rm lei_and
+
+
+export ARCH=arm64
+export PATH=/lhome/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/:$PATH
+export CROSS_COMPILE=aarch64-linux-gnu-
+
+source build/drm_configure.sh /lhome/linux-xlnx_V6.1_base/ 0x20000014 ARM64
+
+minicom
+su
+ifconfig eth0 192.168.33.123
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/wanghualei/ZCU102/
+./connect.sh
+
+cd ../drm_view/driver/verisilicon/
+adb push vs_drm.ko /data/local/lei_test
+adb shell
+
+insmod vs_drm_last_scale.ko
+echo 0xff > /sys/module/drm/parameters/debug
+
+/data/user/0/org.qpython.qpy/files/bin/qpython3.sh /vendor/lib64/setVD.py -V 0xa0e00000 -B 0x20000000 -W 1024 -H 768
+
+/data/user/0/org.qpython.qpy/files/bin/qpython3.sh /data/local/setVD_momenta.py -V 0xa0e00000 -B 0x20000000 -W 1024 -H 768
+
+
+insmod /vendor/lib64/galcore.ko recovery=0 irqs=-1 isrPoll=0x1 registerBases=0xa0000000 powerManagement=0 processPageTable=0 stuckDump=2
+chmod 777 /dev/galcore
+
+/data/user/0/org.qpython.qpy/files/bin/qpython3.sh /vendor/lib64/saveFB.py -B 0x20000000 -W 1024 -H 768 -P /data/local/output/result/outdump
+
+adb pull /data/local/output/result/outdump0.bmp ../
+
+
+/* c2c */
+./zturn -download a /bitfiles/GEN6/binbin/Android_test/gc8000_6_2_1_rc4t_android_fa_0306/VS_2VU440_BP_FA_TOP_pcie.bit
+./zturn -download b /bitfiles/GEN6/binbin/Android_test/0x20000014_dc9200l_rc0f_JSLT_701_android_fb_1120/vsi_2vu440_bp_fb.bit
+
+docker images	/* hwc_android_dc */ 
+docker run -it -d --name=lei_and -v /workspace/FPGA_DPU:/data/dpu  ef6fb8bcfa0b /bin/bash
+docker exec -it 74d15d232768 /bin/bash
+
+/* expand */
+docker stop lei_and
+docker rm lei_and
+
+cd workspace/home/wanghualei/drm_view
+export ARCH=arm64
+export PATH=/lhome/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/:$PATH
+export CROSS_COMPILE=aarch64-linux-gnu-
+
+source build/drm_configure.sh /lhome/linux-xlnx_V6.1_base/ 0x20000014 ARM64
+
+minicom
+su
+ifconfig eth0 192.168.33.123
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/ZCU102
+./connect.sh
+
+cd ../drm_view/driver/verisilicon/
+adb push vs_drm.ko /data/local/lei_test
+adb shell
+
+cd /data/local/lei_test
+echo 0xff > /sys/module/drm/parameters/debug
+insmod vs_drm.ko
+
+/data/user/0/org.qpython.qpy/files/bin/qpython3.sh /data/local/setVD_momenta.py -V 0xa0e00000 -B 0x20000000 -W 1024 -H 768
+
+insmod /vendor/lib64/galcore.ko recovery=0 irqs=-1 isrPoll=0x1 registerBases=0xa0000000 powerManagement=0 processPageTable=0 stuckDump=2
+chmod 777 /dev/galcore
+
+/data/user/0/org.qpython.qpy/files/bin/qpython3.sh /vendor/lib64/saveFB.py -B 0x20000000 -W 1024 -H 768 -P /data/local/output/lei_result/outdump1
+
+adb pull /data/local/output/lei_result/outdump10.bmp ../
+
+
+devmem 0xa0e00000 4
+devmem 0xa0800020 4
+devmem 0xa0e00070 4
+
+/*android order*/
+/*see version*/
+getprop ro.build.version.release

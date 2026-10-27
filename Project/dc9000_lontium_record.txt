@@ -1,0 +1,30 @@
+python3 convert_to_lontium_cmodel_fmt.py -c 2 -i Uniform_test.txt.frame0.wb0.bin  -o Uniform_test.txt.frame0.wb0.raw
+python3 convert_between_raw_and_bmp.py -c 2 -i Uniform.txt.frame0.wb0.raw -W 1920 -H 1080 -b 24
+
+
+source build9x.sh 0x20000002 PCIE_GEN6
+source driver_build_sample.sh
+make clean
+make install
+
+rm -r vs_dpu_test
+cp -r ../../DPU_9x00_osd/build/sdk/samples/vs_dpu_test .
+
+FA:
+gen6_clock_setting.rb S2CCLK1=20 S2CCLK2=2 S2CCLK3=2 force
+
+FB:
+gen6_clock_setting.rb S2CCLK1=2 S2CCLK2=2 S2CCLK3=20 force
+
+mount -t nfs 192.168.32.1:/IPD_GPU_fpga/ /data/dpu
+cd /data/dpu/wanghualei/FPGA/lot_9000/DPU_9x00_osd/build/sdk/drivers/
+export LD_LIBRARY_PATH=`pwd`
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x20000000
+cd ../../../../test/src
+./vs_dpu_test -c all -p case_9000 -f list_debug.txt -s
+
+
+mount -t nfs 192.168.32.1:/IPD_GPU_fpga/ /data/dpu
+cd /data/dpu/wanghualei/FPGA/lot_9000/test/src/
+dmesg -C
+dmesg -w 2>&1 | tee 1.txt

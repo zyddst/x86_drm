@@ -1,0 +1,124 @@
+
+python3 script/dtest.py -g --cid 0x2000001a
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.4.28-p128-cma-512 0x2000001a PCIE_GEN6
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-6.12.42/ 0x2000001a PCIE_GEN6
+
+bar2 + 30881c
+
+python3 -u script/dtest.py -d auto_cases --output dump_dir --clear
+
+python3 script/dtest.py -d auto_cases --output_dir dump_dir --soft --crc crtc0_pos0 -f
+
+
+/*33.91 32.45*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 60
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 20
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 60
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+/*unified driver*/
+
+source build9x.sh 0x2000001a PCIE_GEN6
+source driver_build_sample.sh
+cp -r ../../../../../../SW/DPU/VSI/DPU_9x00/build/sdk/samples/vs_dpu_test ./
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 60
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x18000000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+./vs_dpu_test -c all -p case_9400 -s
+./vs_dpu_test -c all -p case_9400 -f list_debug.txt -s
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 30
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x18000000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 20
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x18000000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 10
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x18000000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 20
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x1C800000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+sys_space_write.rb 0x75708800 0x4 1
+sys_space_write.rb 0x75708800 0x4 0
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 20
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x1C800000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 50
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x1C800000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+./vs_dpu_test -c all -p case_9400 -f list_debug.txt -s
+/*33.17*
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0xdf70881C 0x4 20
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x1C800000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0xdf70881C 0x4 50
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x1C800000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0xdf70881C 0x4 30
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x1C800000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/

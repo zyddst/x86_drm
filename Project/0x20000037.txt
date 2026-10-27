@@ -1,0 +1,76 @@
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-6.12.42/ 0x20000037 PCIE_GEN6
+
+python3 -u script/dtest.py -d auto_cases --output dump_dir --clear
+
+python3 script/dtest.py -g --cid 0x20000037
+sys_space_write.rb 0xf5a08800 0x4 1
+
+sys_space_write.rb 0x75800070 0x4 50(bar3 + 70)
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x75800070 0x4 50
+sys_space_write.rb 0x75800170 0x4 50
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+python3 -u script/dtest.py -d auto_cases --output dump_dir --clear
+
+
+/*virtual display*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x75800070 0x4 50
+sys_space_write.rb 0x75800170 0x4 50
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+insmod ../virtual_display/regionMem/regionMem.ko
+python3 ../virtual_display/setVD_momenta.py -V 0x75800000 -B 0x10000000 -W 1920 -H 1080 -offset 0
+python3 ../virtual_display/setVD_momenta.py -V 0x75800000 -B 0x121C0000 -W 1920 -H 1080 -offset 100
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x75800070 0x4 50
+sys_space_write.rb 0x75800170 0x4 50
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+insmod ../virtual_display/regionMem/regionMem.ko
+python3 ../virtual_display/setVD_momenta.py -V 0x75800000 -B 0x10000000 -W 7680 -H 4320 -offset 0
+python3 ../virtual_display/setVD_momenta.py -V 0x75800000 -B 0x121C0000 -W 7680 -H 4320 -offset 100
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x75800070 0x4 50
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+insmod ../virtual_display/regionMem/regionMem.ko
+python3 ../virtual_display/setVD_momenta.py -V 0x75800000 -B 0x10000000 -W 1920 -H 1080 -offset 0
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+python3 ../virtual_display/saveFB.py -B 0x10000000 -W 1920 -H 1080 -P test.bmp
+python3 ../virtual_display/saveFB.py -B 0x121C0000 -W 1920 -H 1080 -P test1.bmp
+
+python3 ../virtual_display/saveFB.py -B 0x10000000 -W 7680 -H 4320 -P test2.bmp
+python3 ../virtual_display/saveFB.py -B 0x121C0000 -W 7680 -H 4320 -P test3.bmp
+
+
+python3 script/dtest.py -d auto_cases --output_dir dump_dir --soft --crc all
+
+/*33.17*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0xdf800070 0x4 50
+sys_space_write.rb 0xdf800170 0x4 50
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear

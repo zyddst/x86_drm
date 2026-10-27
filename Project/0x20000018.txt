@@ -1,0 +1,19 @@
+
+drmtest -case case/dc9400/customer/0x20000018/stress/3stream_3plane_1crtc_1wb_allpipe_3840x2160.json -o dump_dir/ -reset -p 1
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test --soft --reinstall
+
+drmtest -case auto_cases/test_multi/multiFrame_3plane_1crtc_1wb_allpipe_3840x2160.json -o dump_dir -reset
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test -o dump_dir -reset

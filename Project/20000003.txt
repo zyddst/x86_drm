@@ -1,0 +1,87 @@
+9000nano --- 0x20000003
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.4.28-p128-cma-512 0x20000003 PCIE_GEN6
+
+./zturn -download a /IPD_HWR_FPGA/bitfiles/GEN6/DPU/0x20000003_dc9000nano_7_0_4_rc0d_20241023_debug1/FA/gen6_FA_system_ip.bit
+
+python3 script/dtest.py -g --cid 0x20000003
+
+sys_space_write.rb 0xf6308240(bar1 + offset) 4 1
+change gen7_3840_2160_video_on.sh script vdp_regbase(bar2)
+
+drmtest -case auto_cases/0x20000003/simple.plane0.crtc0.connector0.json -o dump_dir/ -clear
+drmtest -case auto_cases/test/simple.plane0.crtc0.connector0.json -o dump_dir/ -clear
+
+/sys/kernel/debug/dri/1/crtc-0
+
+python3 virtualDisplay/setVD.py -V 0xf7100000 -B 0x10000000 -W 1920 -H 1080
+
+32.56:
+sys_space_write.rb 0xf6308240 4 1
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./gen7_3840_2160_video_on.sh
+cd ../drm-test
+mount 192.168.32.1:/IPD_tools /workspace/tools/
+export PATH=/workspace/tools/python3/ubuntu16/python3.6.9/bin/:$PATH
+python3 virtualDisplay/setVD.py -V 0xf7100000 -B 0x10000000 -W 1920 -H 1080
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test/ --clear --crc_golden -f simple.plane0.crtc0.connector0.json
+
+
+
+sys_space_write.rb 0xde308240 4 1
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./gen7_3840_2160_video_on.sh
+cd ../drm-test
+mount 192.168.32.1:/IPD_tools /workspace/tools/
+export PATH=/workspace/tools/python3/ubuntu16/python3.6.9/bin/:$PATH
+python3 virtualDisplay/setVD.py -V 0xdf100000 -B 0x10000000 -W 1920 -H 1080
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test/ --clear --crc_golden -f
+
+sys_space_write.rb 0xde308240 4 1
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xdf100000
+cd ../drm-test
+mount 192.168.32.1:/IPD_tools /workspace/tools/
+export PATH=/workspace/tools/python3/ubuntu16/python3.6.9/bin/:$PATH
+python3 virtualDisplay/setVD.py -V 0xdf100000 -B 0x10000000 -W 1920 -H 1080
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test/ --clear --crc_golden -f
+
+
+sys_space_write.rb 0xf6308240 4 1
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./gen7_3840_2160_video_on.sh
+cd ../drm-test
+mount 192.168.32.1:/IPD_tools /workspace/tools/
+export PATH=/workspace/tools/python3/ubuntu16/python3.6.9/bin/:$PATH
+python3 virtualDisplay/setVD.py -V 0xf7100000 -B 0x10000000 -W 1920 -H 1080
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test/ --clear --crc_golden -f
+
+
+sys_space_write.rb 0xde308240 4 1
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./gen7_3840_2160_video_on.sh
+cd ../drm-test
+mount 192.168.32.1:/IPD_tools /workspace/tools/
+export PATH=/workspace/tools/python3/ubuntu16/python3.6.9/bin/:$PATH
+python3 virtualDisplay/setVD.py -V 0xdf100000 -B 0x10000000 -W 1920 -H 1080
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test/ --clear --crc_golden -f

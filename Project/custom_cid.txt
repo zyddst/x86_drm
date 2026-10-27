@@ -1,0 +1,9 @@
+drm:
+yaessetech	82000	x335
+freedom		9000nano	0x20000003
+tencent		9000sr	0x20000007
+p26		9400	0x20000005
+701 	9400	0x20000014
+
+unified:
+lontium		tc90000 0x20000002

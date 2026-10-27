@@ -1,0 +1,29 @@
+~/bin/repo init -u ssh://cn9504@192.168.112.21:29418/dpu/drm/manifest -b master --no-repo-verify
+~/bin/repo sync
+
+./zturn -download b /IPD_HWR_FPGA/bitfiles/GEN6/DPU/dc8200_5_7_2_rc1s/FB/VS_2VU440_BP_FB_TOP_pcie.bit
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.4.28-p128-cma-512 0x335 PCIE_GEN6
+
+python3 script/dtest.py -g --cid 0x335
+
+./set_clock.sh 0xdf700000(bar0)
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xdf700000
+cd ../drm-test
+python3 -u script/dtest.py -d auto_cases/test --output dump_dir --soft --reinstall
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xdf700000
+cd ../drm-test
+python3 -u script/dtest.py -d auto_cases/test --output dump_dir --soft --reinstall

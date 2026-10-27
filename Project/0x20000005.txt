@@ -1,0 +1,83 @@
+
+set_clock.sh + last bar
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.4.28-p128-cma-512 0x20000005 PCIE_GEN6
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.15.46drm-p128-cma-dma-buf/ 0x20000005 PCIE_GEN6
+
+python3 script/dtest.py -g --cid 0x20000005
+
+export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+
+echo displayOut > /sys/kernel/debug/dri/1/crtc-0/crc/control
+cat /sys/kernel/debug/dri/1/crtc-0/crc/control
+cat /sys/kernel/debug/dri/1/crtc-0/crc/data
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0x9e000000
+cd ../drm-test
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/ --clear
+
+/*33.17 33.91*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0x75000000
+cd ../drm-test
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/ --clear
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0x75000000
+cd ../drm-test
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/ --clear
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+/*32.56*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xf7000000
+cd ../drm-test
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test --clear
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xf7000000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm_one
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xf7000000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+/*32.45*/
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+echo 0xff > /sys/module/drm/parameters/debug
+dmesg -C
+dmesg -w 2>&1 | tee 1.txt

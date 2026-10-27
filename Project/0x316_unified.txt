@@ -1,0 +1,40 @@
+cd DPU_9x00
+source build9x.sh 0x316 PCIE_GEN6
+source driver_build_sample.sh
+make clean
+make install
+cd test
+make clean
+make install
+cd src
+cp -r ../../DPU_9x00/build/sdk/samples/vs_dpu_test ./
+mkdir result
+chmod 777 result
+
+cp -r ../../../../../../SW/DPU/VSI/DPU_9x00/build/sdk/samples/vs_dpu_test ./
+
+#bar1
+sys_space_view.rb 0xde000000
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/unified_driver/DPU_9x00/build/sdk/drivers/
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko
+cd ../../../../test/src/
+./vs_dpu_test -c all -p case_9400 -s
+./vs_dpu_test -c all -p case_9400 -f list_debug.txt -s
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x18000000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 60
+cd /data/dpu/home/wanghualei/hualei_dev/SW/DPU/VSI/DPU_9x00/build/sdk/drivers
+export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH
+insmod vs_dpu.ko resMemBase=0x10000000  resMemSize=0x18000000
+cd ../../../../../../../TEST/SW/DPU/VSI/DPUTest9x/src/

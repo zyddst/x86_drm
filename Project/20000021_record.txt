@@ -1,0 +1,124 @@
+EXTRA_CFLAGS += -DDEBUG
+gen6_clock_setting.rb S2CCLK1=30 S2CCLK2=30 S2CCLK3=1 force
+
+echo 0xff > /sys/module/drm/parameters/debug
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.4.28-p128-cma-512 0x20000021 PCIE_GEN6
+m
+
+python3 script/dtest.py -g --cid 0x20000021
+
+./set_clock.sh 0xdf800000(last bar)
+
+drmtest -case auto_cases/test/ -o dump_dir -reset
+python3 -u script/dtest.py -d auto_cases --output dump_dir --soft
+python3 -u script/dtest.py -d auto_cases/0x20000021/ --output dump_dir --soft --list list_test100.txt
+
+
+/*33.17*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko
+cd ../../scripts/
+./set_clock.sh 0xdf800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko CMD_LIST=1
+cd ../../scripts/
+./set_clock.sh 0xdf800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+python3 -u script/dtest.py -d auto_cases --output dump_dir --soft
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko CMD_LIST=1
+cd ../../scripts/
+./set_clock.sh 0xdf800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko
+cd ../../scripts/
+./set_clock.sh 0xdf800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+/*32.56*/
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko
+cd ../../scripts/
+./set_clock.sh 0xf6800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+python3 -u script/dtest.py -d auto_cases --output dump_dir --soft
+
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko CMD_LIST=1
+cd ../../scripts/
+./set_clock.sh 0xf6800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko CMD_LIST=1
+cd ../../scripts/
+./set_clock.sh 0xf6800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko
+cd ../../scripts/
+./set_clock.sh 0xf6800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm_one
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko CMD_LIST=1
+cd ../../scripts/
+./set_clock.sh 0xf6800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm_one
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko
+cd ../../scripts/
+./set_clock.sh 0xf6800000
+cd ../drm-test
+drmtest -case auto_cases/test/ -o dump_dir -reset
+
+plane0.feature.scaler.BICUBIC_0.3x0.3.input_3840x2160_output_1280x720.json

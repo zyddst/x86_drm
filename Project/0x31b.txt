@@ -1,0 +1,31 @@
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.15.46drm-p128-cma-dma-buf/ 0x31b PCIE_GEN6
+
+python3 script/dtest.py -g --cid 0x31b
+
+
+./set_clock.sh 0x9d700000(bar0)
+
+/*33.17 \ 33.51*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xdf700000
+cd ../drm-test
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test --clear
+
+
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+
+/*32.56*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd scripts
+./set_clock.sh 0xf6700000
+cd ../drm-test
+python3 -u script/dtest.py --output_dir dump_dir -d auto_cases/test --clear

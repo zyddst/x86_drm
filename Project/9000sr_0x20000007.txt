@@ -1,0 +1,48 @@
+EXTRA_CFLAGS += -DDEBUG
+
+echo 0xff > /sys/module/drm/parameters/debug
+
+/usr/bin/repo init --current-branch -u ssh://cn9504@192.168.32.113:29418/dpu/drm/manifest -b dp
+/usr/bin/repo sync -c -d
+
+source build/drm_configure.sh /data/dpu/tools/linux_headers/linux-5.4.28-p128-cma-512 0x20000007 PCIE_GEN6
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-6.12.42/ 0x20000007 PCIE_GEN6
+m
+
+python3 script/dtest.py -g --cid 0x20000007
+
+vcmd：
+sw_reset(--clean) + hw_reset(--soft)
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/dp_drm
+source scripts/dev_helper.sh
+cd /data/dpu/home/wanghualei/dp_drm/driver/verisilicon
+insmod vs_drm.ko VCMD=1
+cd ../../drm-test
+python3 -u script/dtest.py -d auto_cases --output dump_dir --list list_debug.txt --clean
+
+apb：
+hw_reset(--soft)
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/dp_drm
+source scripts/dev_helper.sh
+cd /data/dpu/home/wanghualei/dp_drm/driver/verisilicon
+insmod vs_drm.ko
+cd ../../drm-test
+python3 -u script/dtest.py -d auto_cases --output dump_dir --list list_debug.txt --soft
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/dp_drm
+source scripts/dev_helper.sh
+cd /data/dpu/home/wanghualei/dp_drm/driver/verisilicon
+insmod vs_drm.ko
+cd ../../drm-test
+
+python3 -u script/dtest.py -d auto_cases --output dump_dir --soft
+
+python3 -u script/dtest.py -d auto_cases --output dump_dir --soft
+
+drmtest -case auto_cases/test_dec/ -o dump_dir -reset -bin

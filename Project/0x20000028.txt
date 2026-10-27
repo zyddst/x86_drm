@@ -1,0 +1,13 @@
+
+
+
+
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x75200070 0x4 10
+sys_space_write.rb 0x75200170 0x4 10
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear

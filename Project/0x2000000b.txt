@@ -1,0 +1,37 @@
+
+python3 script/dtest.py -g --cid 0x2000000b
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.4.28-p128-cma-512 0x2000000b PCIE_GEN6
+python3 -u script/dtest.py -d auto_cases --output dump_dir --clear
+
+/*32.45*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm_one
+source scripts/dev_helper.sh
+install_vs_drm
+sys_space_write.rb 0xdf000070 0x1 0x32
+sys_space_write.rb 0xdf000170 0x1 0x32
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+
+drmtest -case case/dc9400/customer/0x2000000b/stress/mutilFrame_stream_allpipe.json -o dump_dir/ -reset -p 1
+
+
+
+
+/*33.91 32.45*/
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 60
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+mount -o vers=3 192.168.113.1:/FPGA_DPU /data/dpu
+sys_space_write.rb 0x7570881C 0x4 60
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+drmtest -case auto_cases/test/ -o dump_dir -clear

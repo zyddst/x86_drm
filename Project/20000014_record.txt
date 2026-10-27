@@ -1,0 +1,49 @@
+EXTRA_CFLAGS += -DDEBUG
+
+echo 0xff > /sys/module/drm/parameters/debug
+
+
+source build/drm_configure.sh /workspace/FPGA_DPU/home/tools/linux_headers/linux-5.4.28-p128-cma-512 0x20000014 PCIE_GEN6
+m
+
+python3 script/dtest.py -g --cid 0x20000014
+
+
+gen6_clock_setting.rb S2CCLK1=30 S2CCLK2=30 S2CCLK3=1 force
+
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm
+source scripts/dev_helper.sh
+cd driver/verisilicon
+insmod vs_drm.ko
+cd ../../drm-test
+python3 -u script/dtest.py -d auto_cases --output dump_dir --soft --reinstall
+
+drmtest -case auto_cases/test/ -o dump_dir -clear
+
+
+
+fa:gen6_clock_setting.rb S2CCLK1=30 S2CCLK2=30 S2CCLK3=1 force
+fb:gen6_clock_setting.rb S2CCLK1=1 S2CCLK2=30 S2CCLK3=30 force
+
+gen6_clock_setting.rb S2CCLK1=30 S2CCLK2=30 S2CCLK3=1 force
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm_view
+source scripts/dev_helper.sh
+cd /data/dpu/home/wanghualei/drm_view/driver/verisilicon
+insmod vs_drm.ko
+cd ../../drm-test
+python3 -u script/dtest.py -d auto_cases --output dump_dir --soft --reinstall
+
+gen6_clock_setting.rb S2CCLK1=30 S2CCLK2=30 S2CCLK3=1 force
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/test_drm
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
+
+mount 192.168.113.1:/FPGA_DPU /data/dpu
+cd /data/dpu/home/wanghualei/drm_one
+source scripts/dev_helper.sh
+install_vs_drm
+cd drm-test
