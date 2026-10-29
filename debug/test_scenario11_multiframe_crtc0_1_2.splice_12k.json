@@ -1,0 +1,878 @@
+{
+  "frame": {
+    "0": {
+      "plane": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "2": {
+          "crtc": 2,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 1280,
+          "height": 720,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 1280,
+          "crtcHeight": 720
+        }
+      },
+      "connector": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 11520,
+          "height": 2160,
+          "refresh": 30,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "4": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "5": {
+          "crtc": 2,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        }
+      },
+      "crtc": {
+        "0": {
+          "property": {
+            "SPLICE_MODE": {
+              "spliceExEnable": 1,
+              "spliceExDest": [
+                0,
+                0,
+                0
+              ],
+              "spliceDestEnableMask": "ofifo0, ofifo1, ofifo2",
+              "spliceExSrcPanelWidth": [
+                3840,
+                3840,
+                3840
+              ],
+              "spliceExSrcPanelHeight": [
+                2160,
+                2160,
+                2160
+              ]
+            }
+          }
+        },
+        "1": {},
+        "2": {}
+      }
+    },
+    "1": {
+      "plane": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "2": {
+          "crtc": 2,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 1280,
+          "height": 720,
+          "refresh": 60,
+          "crtcX": 1280,
+          "crtcY": 0,
+          "crtcWidth": 1280,
+          "crtcHeight": 720
+        }
+      },
+      "connector": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 11520,
+          "height": 2160,
+          "refresh": 30,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "4": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "5": {
+          "crtc": 2,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        }
+      },
+      "crtc": {
+        "0": {
+          "property": {
+            "SPLICE_MODE": {
+              "spliceExEnable": 1,
+              "spliceExDest": [
+                0,
+                0,
+                0
+              ],
+              "spliceDestEnableMask": "ofifo0, ofifo1, ofifo2",
+              "spliceExSrcPanelWidth": [
+                3840,
+                3840,
+                3840
+              ],
+              "spliceExSrcPanelHeight": [
+                2160,
+                2160,
+                2160
+              ]
+            }
+          }
+        },
+        "1": {},
+        "2": {}
+      }
+    },
+    "2": {
+      "plane": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "2": {
+          "crtc": 2,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 1280,
+          "height": 720,
+          "refresh": 60,
+          "crtcX": 2560,
+          "crtcY": 0,
+          "crtcWidth": 1280,
+          "crtcHeight": 720
+        }
+      },
+      "connector": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 11520,
+          "height": 2160,
+          "refresh": 30,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "4": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "5": {
+          "crtc": 2,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        }
+      },
+      "crtc": {
+        "0": {
+          "property": {
+            "SPLICE_MODE": {
+              "spliceExEnable": 1,
+              "spliceExDest": [
+                0,
+                0,
+                0
+              ],
+              "spliceDestEnableMask": "ofifo0, ofifo1, ofifo2",
+              "spliceExSrcPanelWidth": [
+                3840,
+                3840,
+                3840
+              ],
+              "spliceExSrcPanelHeight": [
+                2160,
+                2160,
+                2160
+              ]
+            }
+          }
+        },
+        "1": {},
+        "2": {}
+      }
+    },
+    "3": {
+      "plane": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "2": {
+          "crtc": 2,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 1280,
+          "height": 720,
+          "refresh": 60,
+          "crtcX": 3200,
+          "crtcY": 0,
+          "crtcWidth": 1280,
+          "crtcHeight": 720,
+          "property": {
+            "DMA_CONFIG": {
+              "dmaMode": "oneROI",
+              "roiX": 0,
+              "roiY": 0,
+              "roiWidth": 640,
+              "roiHeight": 720,
+              "layerOutX": 3200,
+              "layerOutY": 0,
+              "layerOutWidth": 640,
+              "layerOutHeight": 720
+            }
+          }
+        },
+        "4": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 1280,
+          "height": 720,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 1280,
+          "crtcHeight": 720,
+          "property": {
+            "DMA_CONFIG": {
+              "dmaMode": "oneROI",
+              "roiX": 0,
+              "roiY": 0,
+              "roiWidth": 640,
+              "roiHeight": 720,
+              "layerOutX": 0,
+              "layerOutY": 0,
+              "layerOutWidth": 640,
+              "layerOutHeight": 720
+            }
+          }
+        }
+      },
+      "connector": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 11520,
+          "height": 2160,
+          "refresh": 30,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "4": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "5": {
+          "crtc": 2,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        }
+      },
+      "crtc": {
+        "0": {
+          "property": {
+            "SPLICE_MODE": {
+              "spliceExEnable": 1,
+              "spliceExDest": [
+                0,
+                0,
+                0
+              ],
+              "spliceDestEnableMask": "ofifo0, ofifo1, ofifo2",
+              "spliceExSrcPanelWidth": [
+                3840,
+                3840,
+                3840
+              ],
+              "spliceExSrcPanelHeight": [
+                2160,
+                2160,
+                2160
+              ]
+            }
+          }
+        },
+        "1": {},
+        "2": {}
+      }
+    },
+    "4": {
+      "plane": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "2": {
+          "crtc": 2,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "3": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 1280,
+          "height": 720,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 1280,
+          "crtcHeight": 720
+        }
+      },
+      "connector": {
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 11520,
+          "height": 2160,
+          "refresh": 30,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "4": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "5": {
+          "crtc": 2,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        }
+      },
+      "crtc": {
+        "0": {
+          "property": {
+            "SPLICE_MODE": {
+              "spliceExEnable": 1,
+              "spliceExDest": [
+                0,
+                0,
+                0
+              ],
+              "spliceDestEnableMask": "ofifo0, ofifo1, ofifo2",
+              "spliceExSrcPanelWidth": [
+                3840,
+                3840,
+                3840
+              ],
+              "spliceExSrcPanelHeight": [
+                2160,
+                2160,
+                2160
+              ]
+            }
+          }
+        },
+        "1": {},
+        "2": {}
+      }
+    },
+    "5": {
+      "plane": {
+        "0": {
+          "crtc": 0,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "2": {
+          "crtc": 2,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "crtcX": 0,
+          "crtcY": 0,
+          "crtcWidth": 3840,
+          "crtcHeight": 2160
+        },
+        "3": {
+          "crtc": 1,
+          "format": "AR24",
+          "resource": "defaultPattern",
+          "decType": "NONE",
+          "tileMode": "LINEAR",
+          "width": 1280,
+          "height": 720,
+          "refresh": 60,
+          "crtcX": 1280,
+          "crtcY": 0,
+          "crtcWidth": 1280,
+          "crtcHeight": 720
+        }
+      },
+      "connector": {
+        "1": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "3": {
+          "crtc": 0,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 11520,
+          "height": 2160,
+          "refresh": 30,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "4": {
+          "crtc": 1,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        },
+        "5": {
+          "crtc": 2,
+          "format": "AR24",
+          "tileMode": "LINEAR",
+          "width": 3840,
+          "height": 2160,
+          "refresh": 60,
+          "golden": {
+            "md5sum": "not_support",
+            "crc": "not_support"
+          }
+        }
+      },
+      "crtc": {
+        "0": {
+          "property": {
+            "SPLICE_MODE": {
+              "spliceExEnable": 1,
+              "spliceExDest": [
+                0,
+                0,
+                0
+              ],
+              "spliceDestEnableMask": "ofifo0, ofifo1, ofifo2",
+              "spliceExSrcPanelWidth": [
+                3840,
+                3840,
+                3840
+              ],
+              "spliceExSrcPanelHeight": [
+                2160,
+                2160,
+                2160
+              ]
+            }
+          }
+        },
+        "1": {},
+        "2": {}
+      }
+    }
+  }
+}
