@@ -1,0 +1,1385 @@
+[  102.629706] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  102.629710] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  102.629711] vs_dc_vrr_compute_config: vs_crtc_state->vrr vmin: 2237, vmax: 2796, enable: 0
+[  102.629712] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  102.629713] vs_dc_vrr_compute_config: vs_crtc_state->vrr vmin: 2237, vmax: 2796, enable: 0
+[  102.629717] vs_atomic_helper_check_plane_state, [PLANE:130:Layer0] plane_state->visible: 1
+[  102.629718] vs_atomic_helper_check_plane_state, [PLANE:154:Layer1] plane_state->visible: 1
+[  102.629719] vs_atomic_helper_check_plane_state, [PLANE:178:Layer2] plane_state->visible: 1
+[  102.629720] vs_atomic_helper_check_plane_state, [PLANE:218:Layer4] plane_state->visible: 1
+[  102.629721] vs_dc_check_display: panel scale enable: 0
+[  102.629722] vs_dc_check_display: panel scale enable: 0
+[  102.629722] vs_dc_check_display: panel scale enable: 0
+[  102.629729] display_set_mode: display 0 is setting panel mode
+[  102.629730] vs_dpu_reg_cache_update, entry_count: 0, [0x000b6344, 0x00000004].
+[  102.629731] dc_write_immediate: 0x000c6000 = 0x00000000
+[  102.629732] dc_write_immediate: 0x000c7000 = 0x00000000
+[  102.629732] dc_write_immediate: 0x000c8000 = 0x00000000
+[  102.629733] dc_write_immediate: 0x000c9000 = 0x00000000
+[  102.629734] dc_write_immediate: 0x000ca000 = 0x00000000
+[  102.629734] dc_write_immediate: 0x000cb000 = 0x00000000
+[  102.629735] dc_write_immediate: 0x000ce000 = 0x00000000
+[  102.629735] dc_write_immediate: 0x000cf000 = 0x00000000
+[  102.629736] dc_write_immediate: 0x000d0000 = 0x00000000
+[  102.629736] dc_write_immediate: 0x000d1000 = 0x00000000
+[  102.629737] dc_write_immediate: 0x000d2000 = 0x00000000
+[  102.629738] dc_write_immediate: 0x000d3000 = 0x00000000
+[  102.629738] dc_write: 0x000b62b8 = 0x00000001
+[  102.629741] dc_write: 0x0008c028 = 0x00000000
+[  102.629742] vs_dpu_reg_cache_update, entry_count: 1, [0x000b609c, 0x00000000].
+[  102.629742] dc_write: 0x000b60ac = 0x000004d0
+[  102.629743] dc_write: 0x000b60a8 = 0x000007a8
+[  102.629744] dc_write: 0x000b60a4 = 0x00002d00
+[  102.629745] dc_write: 0x000b60a0 = 0x000002d8
+[  102.629746] vs_dpu_reg_cache_update, entry_count: 2, [0x000b60b0, 0x00000001].
+[  102.629747] dc_write: 0x000b60c0 = 0x0000000a
+[  102.629747] dc_write: 0x000b60bc = 0x0000001b
+[  102.629748] dc_write: 0x000b60b8 = 0x00000870
+[  102.629749] dc_write: 0x000b60b4 = 0x00000003
+[  102.629749] dc_write: 0x000909cc = 0x00002d00
+[  102.629750] dc_write: 0x000909d0 = 0x00000870
+[  102.629751] vs_dpu_reg_cache_update, entry_count: 3, [0x000b6088, 0x00000024].
+[  102.629950] dc_read: 0x000b60e8 = 0x00000000
+[  102.629951] dc_read: 0x000b60e8 = 0x00000000
+[  102.629956] dc_read_immediate: 0x00083460 = 0x00000000
+[  102.629957] dc_write_immediate: 0x00083460 = 0x00000007
+[  102.629965] dc_read_immediate: 0x00080004 = 0x00000000
+[  102.629965] dc_write_immediate: 0x00080004 = 0x00000020
+[  102.629966] dc_read: 0x000b60e8 = 0x00000000
+[  102.629966] display_set_mode: display 1 is setting panel mode
+[  102.629967] vs_dpu_reg_cache_update, entry_count: 0, [0x000b6724, 0x00000005].
+[  102.629967] dc_write_immediate: 0x000c6000 = 0x00000001
+[  102.629968] dc_write_immediate: 0x000c7000 = 0x00000001
+[  102.629968] dc_write_immediate: 0x000c8000 = 0x00000001
+[  102.629969] dc_write_immediate: 0x000c9000 = 0x00000001
+[  102.629969] dc_write_immediate: 0x000ca000 = 0x00000001
+[  102.629970] dc_write_immediate: 0x000cb000 = 0x00000001
+[  102.629970] dc_write_immediate: 0x000ce000 = 0x00000001
+[  102.629971] dc_write_immediate: 0x000cf000 = 0x00000001
+[  102.629971] dc_write_immediate: 0x000d0000 = 0x00000001
+[  102.629972] dc_write_immediate: 0x000d1000 = 0x00000001
+[  102.629972] dc_write_immediate: 0x000d2000 = 0x00000001
+[  102.629973] dc_write_immediate: 0x000d3000 = 0x00000001
+[  102.629973] dc_write: 0x000b6698 = 0x00000001
+[  102.629974] dc_write: 0x0009c028 = 0x00000000
+[  102.629975] vs_dpu_reg_cache_update, entry_count: 1, [0x000b647c, 0x00000000].
+[  102.629975] dc_write: 0x000b648c = 0x000001a0
+[  102.629976] dc_write: 0x000b6488 = 0x000002e0
+[  102.629976] dc_write: 0x000b6484 = 0x00000f00
+[  102.629977] dc_write: 0x000b6480 = 0x00000140
+[  102.629978] vs_dpu_reg_cache_update, entry_count: 2, [0x000b6490, 0x00000001].
+[  102.629978] dc_write: 0x000b64a0 = 0x00000005
+[  102.629979] dc_write: 0x000b649c = 0x00000045
+[  102.629979] dc_write: 0x000b6498 = 0x00000870
+[  102.629980] dc_write: 0x000b6494 = 0x00000003
+[  102.629980] dc_write: 0x000a09cc = 0x00000f00
+[  102.629981] dc_write: 0x000a09d0 = 0x00000870
+[  102.629982] vs_dpu_reg_cache_update, entry_count: 3, [0x000b6468, 0x00000024].
+[  102.630185] dc_read: 0x000b64c8 = 0x00000000
+[  102.630185] dc_read: 0x000b64c8 = 0x00000000
+[  102.630191] dc_read_immediate: 0x00083748 = 0x00000000
+[  102.630191] dc_write_immediate: 0x00083748 = 0x00000007
+[  102.630199] dc_read_immediate: 0x00080004 = 0x00000020
+[  102.630199] dc_write_immediate: 0x00080004 = 0x00000020
+[  102.630200] dc_read: 0x000b64c8 = 0x00000000
+[  102.630200] display_set_mode: display 2 is setting panel mode
+[  102.630201] vs_dpu_reg_cache_update, entry_count: 0, [0x000b6b04, 0x00000006].
+[  102.630201] dc_write_immediate: 0x000c6000 = 0x00000002
+[  102.630202] dc_write_immediate: 0x000c7000 = 0x00000002
+[  102.630202] dc_write_immediate: 0x000c8000 = 0x00000002
+[  102.630203] dc_write_immediate: 0x000c9000 = 0x00000002
+[  102.630203] dc_write_immediate: 0x000ca000 = 0x00000002
+[  102.630203] dc_write_immediate: 0x000cb000 = 0x00000002
+[  102.630204] dc_write_immediate: 0x000ce000 = 0x00000002
+[  102.630204] dc_write_immediate: 0x000cf000 = 0x00000002
+[  102.630205] dc_write_immediate: 0x000d0000 = 0x00000002
+[  102.630205] dc_write_immediate: 0x000d1000 = 0x00000002
+[  102.630206] dc_write_immediate: 0x000d2000 = 0x00000002
+[  102.630206] dc_write_immediate: 0x000d3000 = 0x00000002
+[  102.630207] dc_write: 0x000b6a78 = 0x00000001
+[  102.630207] dc_write: 0x000ac010 = 0x00000000
+[  102.630208] vs_dpu_reg_cache_update, entry_count: 1, [0x000b685c, 0x00000000].
+[  102.630209] dc_write: 0x000b686c = 0x000001a0
+[  102.630209] dc_write: 0x000b6868 = 0x000002e0
+[  102.630210] dc_write: 0x000b6864 = 0x00000f00
+[  102.630210] dc_write: 0x000b6860 = 0x00000140
+[  102.630211] vs_dpu_reg_cache_update, entry_count: 2, [0x000b6870, 0x00000001].
+[  102.630212] dc_write: 0x000b6880 = 0x00000005
+[  102.630212] dc_write: 0x000b687c = 0x00000045
+[  102.630213] dc_write: 0x000b6878 = 0x00000870
+[  102.630213] dc_write: 0x000b6874 = 0x00000003
+[  102.630214] dc_write: 0x000ac5e4 = 0x00000f00
+[  102.630214] dc_write: 0x000ac5e8 = 0x00000870
+[  102.630215] vs_dpu_reg_cache_update, entry_count: 3, [0x000b6848, 0x00000024].
+[  102.630418] dc_read: 0x000b68a8 = 0x00000000
+[  102.630418] dc_read: 0x000b68a8 = 0x00000000
+[  102.630429] dc_read_immediate: 0x00083a30 = 0x00000000
+[  102.630430] dc_write_immediate: 0x00083a30 = 0x00000007
+[  102.630438] dc_read_immediate: 0x00080004 = 0x00000020
+[  102.630439] dc_write_immediate: 0x00080004 = 0x00000020
+[  102.630440] dc_read: 0x000b68a8 = 0x00000000
+[  102.630447] dc_read_immediate: 0x000b5080 = 0x00000000
+[  102.630448] dc_write_immediate: 0x000b5080 = 0x00000000
+[  102.630461] wb_set_fb_v2: set post wb 0 fb
+[  102.630469] dc_read_immediate: 0x00082e94 = 0x00000000
+[  102.630469] dc_write_immediate: 0x00082e94 = 0x00000003
+[  102.630478] dc_read: 0x000b50a4 = 0x00000000
+[  102.630479] dc_write: 0x000b50a4 = 0x00000000
+[  102.630480] dc_write: 0x000b50ac = 0x00000000
+[  102.630481] dc_write: 0x000b5088 = 0x00003c00
+[  102.630482] dc_write: 0x000b5120 = 0x00000000
+[  102.630483] dc_write: 0x000b5124 = 0x00000000
+[  102.630484] dc_write: 0x000b508c = 0x04800000
+[  102.630485] dc_write: 0x000b5090 = 0x00000001
+[  102.630486] dc_write: 0x000b5110 = 0x00000000
+[  102.630487] dc_write: 0x000b5114 = 0x00000000
+[  102.630487] dc_write: 0x000b5118 = 0x00000000
+[  102.630488] dc_write: 0x000b511c = 0x00000000
+[  102.630489] dc_write: 0x000b5084 = 0x00000001
+[  102.630490] dc_write_immediate: 0x000c5dc0 = 0x00000002
+[  102.630510] dc_read_immediate: 0x000b5840 = 0x00000000
+[  102.630511] dc_write_immediate: 0x000b5840 = 0x00000000
+[  102.630511] wb_set_fb_v2: set post wb 1 fb
+[  102.630519] dc_read_immediate: 0x0008317c = 0x00000000
+[  102.630519] dc_write_immediate: 0x0008317c = 0x00000003
+[  102.630520] dc_write_immediate: 0x000b5000 = 0x00000001
+[  102.630529] dc_read: 0x000b5864 = 0x00000000
+[  102.630530] dc_write: 0x000b5864 = 0x00000000
+[  102.630531] dc_write: 0x000b586c = 0x00000000
+[  102.630532] dc_write: 0x000b5848 = 0x00003c00
+[  102.630533] dc_write: 0x000b58e0 = 0x00000000
+[  102.630534] dc_write: 0x000b58e4 = 0x00000000
+[  102.630535] dc_write: 0x000b584c = 0x06800000
+[  102.630536] dc_write: 0x000b5850 = 0x00000001
+[  102.630537] dc_write: 0x000b58d0 = 0x00000000
+[  102.630538] dc_write: 0x000b58d4 = 0x00000000
+[  102.630539] dc_write: 0x000b58d8 = 0x00000000
+[  102.630540] dc_write: 0x000b58dc = 0x00000000
+[  102.630541] dc_write: 0x000b5844 = 0x00000001
+[  102.630542] dc_write_immediate: 0x000c5ee0 = 0x00000007
+[  102.630543] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  102.630545] update_display_std_splice: display0 splice: 0, enable: 0
+[  102.630547] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  102.630548] update_display_std_splice: display1 splice: 0, enable: 0
+[  102.630549] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  102.630550] update_display_std_splice: display2 splice: 0, enable: 0
+[  102.630553] get_roi_image_width : width: 3840, height: 2160.
+[  102.630556] get_roi_image_width : width: 3840, height: 2160.
+[  102.630582] get_roi_image_width : width: 3840, height: 2160.
+[  102.630583] get_roi_image_width : width: 1280, height: 720.
+[  102.630590] dc_read_immediate: 0x00010000 = 0x00000000
+[  102.630591] dc_write_immediate: 0x00010000 = 0x00000000
+[  102.630599] dc_read_immediate: 0x000b5080 = 0x00000000
+[  102.630600] dc_write_immediate: 0x000b5080 = 0x00000000
+[  102.630609] dc_read_immediate: 0x0008c000 = 0x00000000
+[  102.630610] dc_write_immediate: 0x0008c000 = 0x00000000
+[  102.630618] dc_read_immediate: 0x000b6270 = 0x00000000
+[  102.630619] dc_write_immediate: 0x000b6270 = 0x00000000
+[  102.630621] vs_dpu_reg_cache_update, entry_count: 4, [0x000c6000, 0x00000000].
+[  102.630622] dc_write: 0x0001002c = 0x08800000
+[  102.630623] dc_write: 0x00010030 = 0x00000001
+[  102.630625] dc_write: 0x00010034 = 0x00000000
+[  102.630626] dc_write: 0x00010038 = 0x00000000
+[  102.630627] dc_write: 0x0001003c = 0x00000000
+[  102.630628] dc_write: 0x00010040 = 0x00000000
+[  102.630629] dc_write: 0x00010044 = 0x00003c00
+[  102.630631] dc_write: 0x00010048 = 0x00000000
+[  102.630632] dc_write: 0x0001004c = 0x00000000
+[  102.630633] dc_write: 0x0001005c = 0x08700f00
+[  102.630648] dc_read: 0x00010088 = 0x00000008
+[  102.630649] dc_write: 0x00010e08 = 0x00000000
+[  102.630650] dc_write: 0x00010088 = 0x00000009
+[  102.630651] dc_write: 0x000d6000 = 0x00000000
+[  102.630661] dc_read: 0x0001028c = 0x00000010
+[  102.630662] dc_write: 0x0001028c = 0x00000010
+[  102.630664] dc_read: 0x00010088 = 0x00000009
+[  102.630665] dc_write: 0x00010088 = 0x00000009
+[  102.630666] dc_write: 0x0001029c = 0x00000000
+[  102.630667] dc_write: 0x000102a0 = 0x08700f00
+[  102.630677] dc_read: 0x000d6004 = 0x00000000
+[  102.630678] dc_write: 0x000d6004 = 0x00000000
+[  102.630679] dc_write: 0x00010290 = 0x00000000
+[  102.630680] dc_write: 0x00010288 = 0x00000000
+[  102.630683] dc_write_immediate: 0x000b60f4 = 0x00000000
+[  102.630684] blender_dither_config_hw: display 0 is setting panel bld dither
+[  102.630692] dc_read: 0x0008981c = 0x00000000
+[  102.630693] dc_write: 0x0008981c = 0x00000000
+[  102.630695] vs_dpu_reg_cache_update, entry_count: 5, [0x000b6344, 0x00000004].
+[  102.630696] dc_write: 0x000909cc = 0x00000f00
+[  102.630697] dc_write: 0x000909d0 = 0x00000870
+[  102.630698] vs_dpu_reg_cache_update, entry_count: 4, [0x000b6724, 0x00000004].
+[  102.630699] dc_write: 0x000a09cc = 0x00000f00
+[  102.630700] dc_write: 0x000a09d0 = 0x00000870
+[  102.630701] vs_dpu_reg_cache_update, entry_count: 4, [0x000b6b04, 0x00000004].
+[  102.630702] dc_write: 0x000ac5e4 = 0x00000f00
+[  102.630703] dc_write: 0x000ac5e8 = 0x00000870
+[  102.630714] dc_read_immediate: 0x00010000 = 0x00000000
+[  102.630715] dc_write_immediate: 0x00010000 = 0x00000001
+[  102.630723] dc_read_immediate: 0x000b5080 = 0x00000000
+[  102.630724] dc_write_immediate: 0x000b5080 = 0x00000001
+[  102.630725] dc_write_immediate: 0x000b6650 = 0x00000001
+[  102.630734] dc_read_immediate: 0x0008c000 = 0x00000000
+[  102.630735] dc_write_immediate: 0x0008c000 = 0x00000001
+[  102.630743] dc_read_immediate: 0x000b6270 = 0x00000000
+[  102.630744] dc_write_immediate: 0x000b6270 = 0x00000001
+[  102.630745] vs_dc_commit_non_shadow_reg_cache: committing display 0 non shadow reg cache
+[  102.630746] vs_dpu_reg_cache_commit: i = 0, 0x000b6344 = 0x00000004
+[  102.630747] vs_dpu_reg_cache_commit: i = 1, 0x000b609c = 0x00000000
+[  102.630748] vs_dpu_reg_cache_commit: i = 2, 0x000b60b0 = 0x00000001
+[  102.630750] vs_dpu_reg_cache_commit: i = 3, 0x000b6088 = 0x00000024
+[  102.630751] vs_dpu_reg_cache_commit: i = 4, 0x000c6000 = 0x00000000
+[  102.630752] vs_dpu_reg_cache_commit: i = 5, 0x000b6344 = 0x00000004
+[  102.630753] dc_write_immediate: 0x000b6104 = 0x00000002
+[  102.630814] dc_read_immediate: 0x000c5014 = 0x00000000
+[  102.630820] dc_read_immediate: 0x000909bc = 0x00000000
+[  102.630821] display_id:0, output_id:0, dest:0, group mask:0x7 leader_id:2
+[  102.630828] dc_read_immediate: 0x00014000 = 0x00000000
+[  102.630829] dc_write_immediate: 0x00014000 = 0x00000000
+[  102.630837] dc_read_immediate: 0x00020000 = 0x00000000
+[  102.630839] dc_write_immediate: 0x00020000 = 0x00000000
+[  102.630847] dc_read_immediate: 0x000b5840 = 0x00000000
+[  102.630848] dc_write_immediate: 0x000b5840 = 0x00000000
+[  102.630856] dc_read_immediate: 0x0009c000 = 0x00000000
+[  102.630857] dc_write_immediate: 0x0009c000 = 0x00000000
+[  102.630866] dc_read_immediate: 0x000b6650 = 0x00000001
+[  102.630867] dc_write_immediate: 0x000b6650 = 0x00000000
+[  102.630868] vs_dpu_reg_cache_update, entry_count: 5, [0x000c7000, 0x00000001].
+[  102.630869] dc_write: 0x0001402c = 0x0a800000
+[  102.630870] dc_write: 0x00014030 = 0x00000001
+[  102.630872] dc_write: 0x00014034 = 0x00000000
+[  102.630873] dc_write: 0x00014038 = 0x00000000
+[  102.630874] dc_write: 0x0001403c = 0x00000000
+[  102.630875] dc_write: 0x00014040 = 0x00000000
+[  102.630877] dc_write: 0x00014044 = 0x00003c00
+[  102.630878] dc_write: 0x00014048 = 0x00000000
+[  102.630879] dc_write: 0x0001404c = 0x00000000
+[  102.630880] dc_write: 0x0001405c = 0x08700f00
+[  102.630895] dc_read: 0x00014088 = 0x00000008
+[  102.630896] dc_write: 0x00014e08 = 0x00000000
+[  102.630897] dc_write: 0x00014088 = 0x00000009
+[  102.630898] dc_write: 0x000d7000 = 0x00000001
+[  102.630909] dc_read: 0x0001428c = 0x00000010
+[  102.630909] dc_write: 0x0001428c = 0x00000010
+[  102.630910] dc_read: 0x00014088 = 0x00000009
+[  102.630911] dc_write: 0x00014088 = 0x00000009
+[  102.630912] dc_write: 0x0001429c = 0x00000000
+[  102.630914] dc_write: 0x000142a0 = 0x08700f00
+[  102.630924] dc_read: 0x000d7004 = 0x00000000
+[  102.630924] dc_write: 0x000d7004 = 0x00000000
+[  102.630925] dc_write: 0x00014290 = 0x00000000
+[  102.630926] dc_write: 0x00014288 = 0x00000000
+[  102.630927] vs_dpu_reg_cache_update, entry_count: 6, [0x000ca000, 0x00000001].
+[  102.630928] dc_write: 0x0002002c = 0x0e800000
+[  102.630929] dc_write: 0x00020030 = 0x00000001
+[  102.630930] dc_write: 0x00020034 = 0x00000000
+[  102.630931] dc_write: 0x00020038 = 0x00000000
+[  102.630932] dc_write: 0x0002003c = 0x00000000
+[  102.630933] dc_write: 0x00020040 = 0x00000000
+[  102.630934] dc_write: 0x00020044 = 0x00001400
+[  102.630935] dc_write: 0x00020048 = 0x00000000
+[  102.630936] dc_write: 0x0002004c = 0x00000000
+[  102.630937] dc_write: 0x0002005c = 0x02d00500
+[  102.630956] dc_read: 0x00020088 = 0x00000000
+[  102.630957] dc_write: 0x00020e08 = 0x00000000
+[  102.630958] dc_write: 0x00020088 = 0x00000001
+[  102.630959] dc_write: 0x000da000 = 0x00000004
+[  102.630969] dc_read: 0x0002028c = 0x00000010
+[  102.630971] dc_write: 0x0002028c = 0x00000010
+[  102.630972] dc_write: 0x0002029c = 0x00000500
+[  102.630973] dc_write: 0x000202a0 = 0x02d00500
+[  102.630983] dc_read: 0x000da004 = 0x00000000
+[  102.630984] dc_write: 0x000da004 = 0x00000000
+[  102.630985] dc_write: 0x00020290 = 0x00000000
+[  102.630986] dc_write: 0x00020288 = 0x00000000
+[  102.630988] dc_write_immediate: 0x000b64d4 = 0x00000000
+[  102.630989] blender_dither_config_hw: display 1 is setting panel bld dither
+[  102.630998] dc_read: 0x0008a01c = 0x00000000
+[  102.630999] dc_write: 0x0008a01c = 0x00000000
+[  102.631008] dc_read_immediate: 0x00014000 = 0x00000000
+[  102.631009] dc_write_immediate: 0x00014000 = 0x00000001
+[  102.631017] dc_read_immediate: 0x00020000 = 0x00000000
+[  102.631018] dc_write_immediate: 0x00020000 = 0x00000001
+[  102.631026] dc_read_immediate: 0x000b5840 = 0x00000000
+[  102.631027] dc_write_immediate: 0x000b5840 = 0x00000001
+[  102.631028] dc_write_immediate: 0x000b6650 = 0x00000001
+[  102.631038] dc_read_immediate: 0x0009c000 = 0x00000000
+[  102.631039] dc_write_immediate: 0x0009c000 = 0x00000001
+[  102.631047] dc_read_immediate: 0x000b6650 = 0x00000001
+[  102.631048] dc_write_immediate: 0x000b6650 = 0x00000001
+[  102.631049] vs_dc_commit_non_shadow_reg_cache: committing display 1 non shadow reg cache
+[  102.631050] vs_dpu_reg_cache_commit: i = 0, 0x000b6724 = 0x00000005
+[  102.631051] vs_dpu_reg_cache_commit: i = 1, 0x000b647c = 0x00000000
+[  102.631053] vs_dpu_reg_cache_commit: i = 2, 0x000b6490 = 0x00000001
+[  102.631054] vs_dpu_reg_cache_commit: i = 3, 0x000b6468 = 0x00000024
+[  102.631055] vs_dpu_reg_cache_commit: i = 4, 0x000b6724 = 0x00000004
+[  102.631056] vs_dpu_reg_cache_commit: i = 5, 0x000c7000 = 0x00000001
+[  102.631057] vs_dpu_reg_cache_commit: i = 6, 0x000ca000 = 0x00000001
+[  102.631058] dc_write_immediate: 0x000b6104 = 0x00000002
+[  102.631097] dc_read_immediate: 0x000c5014 = 0x00000000
+[  102.631103] dc_read_immediate: 0x000909bc = 0x00000000
+[  102.631104] display_id:1, output_id:1, dest:0, group mask:0x7 leader_id:2
+[  102.631106] dc_read: 0x000b64c8 = 0x00000000
+[  102.631112] dc_read_immediate: 0x00083748 = 0x00000007
+[  102.631113] dc_write_immediate: 0x00083748 = 0x00000000
+[  102.631122] dc_read_immediate: 0x00080004 = 0x00000020
+[  102.631123] dc_write_immediate: 0x00080004 = 0x00000000
+[  102.631168] dc_read_immediate: 0x00018000 = 0x00000000
+[  102.631169] dc_write_immediate: 0x00018000 = 0x00000000
+[  102.631177] dc_read_immediate: 0x000ac000 = 0x00000000
+[  102.631178] dc_write_immediate: 0x000ac000 = 0x00000000
+[  102.631187] dc_read_immediate: 0x000b6a30 = 0x00000000
+[  102.631187] dc_write_immediate: 0x000b6a30 = 0x00000000
+[  102.631188] vs_dpu_reg_cache_update, entry_count: 5, [0x000c8000, 0x00000002].
+[  102.631189] dc_write: 0x0001802c = 0x0c800000
+[  102.631190] dc_write: 0x00018030 = 0x00000001
+[  102.631191] dc_write: 0x00018034 = 0x00000000
+[  102.631192] dc_write: 0x00018038 = 0x00000000
+[  102.631193] dc_write: 0x0001803c = 0x00000000
+[  102.631194] dc_write: 0x00018040 = 0x00000000
+[  102.631196] dc_write: 0x00018044 = 0x00003c00
+[  102.631197] dc_write: 0x00018048 = 0x00000000
+[  102.631198] dc_write: 0x0001804c = 0x00000000
+[  102.631199] dc_write: 0x0001805c = 0x08700f00
+[  102.631215] dc_read: 0x00018088 = 0x00000000
+[  102.631215] dc_write: 0x00018e08 = 0x00000000
+[  102.631217] dc_write: 0x00018088 = 0x00000001
+[  102.631218] dc_write: 0x000d8000 = 0x00000002
+[  102.631228] dc_read: 0x0001828c = 0x00000010
+[  102.631229] dc_write: 0x0001828c = 0x00000010
+[  102.631230] dc_write: 0x0001829c = 0x00000000
+[  102.631231] dc_write: 0x000182a0 = 0x08700f00
+[  102.631241] dc_read: 0x000d8004 = 0x00000000
+[  102.631242] dc_write: 0x000d8004 = 0x00000000
+[  102.631243] dc_write: 0x00018290 = 0x00000000
+[  102.631244] dc_write: 0x00018288 = 0x00000000
+[  102.631245] dc_write_immediate: 0x000b68b4 = 0x00000000
+[  102.631246] blender_dither_config_hw: display 2 is setting panel bld dither
+[  102.631256] dc_read: 0x0008a81c = 0x00000000
+[  102.631257] dc_write: 0x0008a81c = 0x00000000
+[  102.631265] dc_read_immediate: 0x00018000 = 0x00000000
+[  102.631266] dc_write_immediate: 0x00018000 = 0x00000001
+[  102.631275] dc_read_immediate: 0x000ac000 = 0x00000000
+[  102.631276] dc_write_immediate: 0x000ac000 = 0x00000001
+[  102.631284] dc_read_immediate: 0x000b6a30 = 0x00000000
+[  102.631285] dc_write_immediate: 0x000b6a30 = 0x00000001
+[  102.631286] vs_dc_commit_non_shadow_reg_cache: committing display 2 non shadow reg cache
+[  102.631287] vs_dpu_reg_cache_commit: i = 0, 0x000b6b04 = 0x00000006
+[  102.631288] vs_dpu_reg_cache_commit: i = 1, 0x000b685c = 0x00000000
+[  102.631289] vs_dpu_reg_cache_commit: i = 2, 0x000b6870 = 0x00000001
+[  102.631290] vs_dpu_reg_cache_commit: i = 3, 0x000b6848 = 0x00000024
+[  102.631291] vs_dpu_reg_cache_commit: i = 4, 0x000b6b04 = 0x00000004
+[  102.631292] vs_dpu_reg_cache_commit: i = 5, 0x000c8000 = 0x00000002
+[  102.631293] dc_write_immediate: 0x000b6104 = 0x00000002
+[  102.631334] dc_read_immediate: 0x000c5014 = 0x00000000
+[  102.631340] dc_read_immediate: 0x000909bc = 0x00000000
+[  102.631341] display_id:2, output_id:2, dest:0, group mask:0x7 leader_id:2
+[  102.631342] dc_read: 0x000b68a8 = 0x00000000
+[  102.631348] dc_read_immediate: 0x00083a30 = 0x00000007
+[  102.631349] dc_write_immediate: 0x00083a30 = 0x00000000
+[  102.631358] dc_read_immediate: 0x00080004 = 0x00000000
+[  102.631359] dc_write_immediate: 0x00080004 = 0x00000000
+[  102.631400] dc_write_immediate: 0x000b6080 = 0x00000001
+[  102.631514] dc_read_immediate: 0x00000024 = 0x00000000
+[  102.631523] dc_read_immediate: 0x0000201c = 0x00000000
+[  102.631529] dc_read_immediate: 0x0000241c = 0x00000000
+[  102.631535] dc_read_immediate: 0x0000281c = 0x00000000
+[  102.631541] dc_read_immediate: 0x00002c1c = 0x00000000
+[  102.631546] dc_read_immediate: 0x0000301c = 0x00000000
+[  102.631552] dc_read_immediate: 0x0000341c = 0x00000000
+[  102.631558] dc_read_immediate: 0x00040024 = 0x00000000
+[  102.631564] dc_read_immediate: 0x0004201c = 0x00000000
+[  102.631569] dc_read_immediate: 0x0004241c = 0x00000000
+[  102.631575] dc_read_immediate: 0x0004281c = 0x00000000
+[  102.631581] dc_read_immediate: 0x00042c1c = 0x00000000
+[  102.631587] dc_read_immediate: 0x0004301c = 0x00000000
+[  102.631592] dc_read_immediate: 0x0004341c = 0x00000000
+[  102.631598] dc_read_immediate: 0x00083464 = 0x00000001
+[  102.631599] dc_write_immediate: 0x00083464 = 0x00000001
+[  102.631607] dc_read_immediate: 0x0008374c = 0x00000000
+[  102.631613] dc_read_immediate: 0x00083a34 = 0x00000000
+[  102.631618] dc_read_immediate: 0x00083d1c = 0x00000000
+[  102.631624] dc_read_immediate: 0x00082bbc = 0x00000000
+[  102.631630] dc_read_immediate: 0x00082e98 = 0x00000000
+[  102.631636] dc_read_immediate: 0x00083180 = 0x00000000
+[  102.631641] dc_read_immediate: 0x00080008 = 0x00000000
+[  102.631647] dc_read_immediate: 0x00080008 = 0x00000000
+[  102.631648] dc_isr: frm_start=0x1 frm_done=0x0 wb_frm_done=0x0
+[  136.529470] dc_read_immediate: 0x00000024 = 0x00000000
+[  136.529495] dc_read_immediate: 0x0000201c = 0x00000000
+[  136.529506] dc_read_immediate: 0x0000241c = 0x00000000
+[  136.529515] dc_read_immediate: 0x0000281c = 0x00000000
+[  136.529523] dc_read_immediate: 0x00002c1c = 0x00000000
+[  136.529531] dc_read_immediate: 0x0000301c = 0x00000000
+[  136.529539] dc_read_immediate: 0x0000341c = 0x00000000
+[  136.529548] dc_read_immediate: 0x00040024 = 0x00000000
+[  136.529556] dc_read_immediate: 0x0004201c = 0x00000000
+[  136.529565] dc_read_immediate: 0x0004241c = 0x00000000
+[  136.529573] dc_read_immediate: 0x0004281c = 0x00000000
+[  136.529581] dc_read_immediate: 0x00042c1c = 0x00000000
+[  136.529590] dc_read_immediate: 0x0004301c = 0x00000000
+[  136.529598] dc_read_immediate: 0x0004341c = 0x00000000
+[  136.529606] dc_read_immediate: 0x00083464 = 0x00000000
+[  136.529614] dc_read_immediate: 0x0008374c = 0x00000000
+[  136.529622] dc_read_immediate: 0x00083a34 = 0x00000000
+[  136.529630] dc_read_immediate: 0x00083d1c = 0x00000000
+[  136.529638] dc_read_immediate: 0x00082bbc = 0x00000000
+[  136.529647] dc_read_immediate: 0x00082e98 = 0x00000001
+[  136.529650] dc_write_immediate: 0x00082e98 = 0x00000001
+[  136.529661] dc_read_immediate: 0x00083180 = 0x00000000
+[  136.529669] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.529677] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.529680] dc_isr: frm_start=0x0 frm_done=0x0 wb_frm_done=0x1
+[  136.529686] vs_writeback_handle_vblank: connector_id=0 armed=1
+[  136.529729] dc_read_immediate: 0x000b5080 = 0x00000000
+[  136.529733] dc_write_immediate: 0x000b5080 = 0x00000000
+[  136.529737] wb_set_fb_v2: set post wb 0 fb
+[  136.529746] dc_read_immediate: 0x00082e94 = 0x00000003
+[  136.529749] dc_write_immediate: 0x00082e94 = 0x00000000
+[  136.529752] dc_write: 0x000b5084 = 0x00000000
+[  136.529769] dc_read_immediate: 0x000b5080 = 0x00000000
+[  136.529772] dc_write_immediate: 0x000b5080 = 0x00000001
+[  136.529776] dc_write_immediate: 0x000b6650 = 0x00000001
+[  136.533127] dc_read_immediate: 0x00000024 = 0x00000000
+[  136.533151] dc_read_immediate: 0x0000201c = 0x00000000
+[  136.533162] dc_read_immediate: 0x0000241c = 0x00000000
+[  136.533171] dc_read_immediate: 0x0000281c = 0x00000000
+[  136.533179] dc_read_immediate: 0x00002c1c = 0x00000000
+[  136.533187] dc_read_immediate: 0x0000301c = 0x00000000
+[  136.533196] dc_read_immediate: 0x0000341c = 0x00000000
+[  136.533204] dc_read_immediate: 0x00040024 = 0x00000000
+[  136.533213] dc_read_immediate: 0x0004201c = 0x00000000
+[  136.533221] dc_read_immediate: 0x0004241c = 0x00000000
+[  136.533229] dc_read_immediate: 0x0004281c = 0x00000000
+[  136.533237] dc_read_immediate: 0x00042c1c = 0x00000000
+[  136.533245] dc_read_immediate: 0x0004301c = 0x00000000
+[  136.533254] dc_read_immediate: 0x0004341c = 0x00000000
+[  136.533262] dc_read_immediate: 0x00083464 = 0x00000000
+[  136.533270] dc_read_immediate: 0x0008374c = 0x00000000
+[  136.533278] dc_read_immediate: 0x00083a34 = 0x00000000
+[  136.533286] dc_read_immediate: 0x00083d1c = 0x00000000
+[  136.533294] dc_read_immediate: 0x00082bbc = 0x00000000
+[  136.533303] dc_read_immediate: 0x00083180 = 0x00000001
+[  136.533306] dc_write_immediate: 0x00083180 = 0x00000001
+[  136.533317] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.533325] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.533328] dc_isr: frm_start=0x0 frm_done=0x0 wb_frm_done=0x2
+[  136.533335] vs_writeback_handle_vblank: connector_id=1 armed=1
+[  136.533368] dc_read_immediate: 0x000b5840 = 0x00000000
+[  136.533372] dc_write_immediate: 0x000b5840 = 0x00000000
+[  136.533376] wb_set_fb_v2: set post wb 1 fb
+[  136.533385] dc_read_immediate: 0x0008317c = 0x00000003
+[  136.533388] dc_write_immediate: 0x0008317c = 0x00000000
+[  136.533391] dc_write: 0x000b5844 = 0x00000000
+[  136.533408] dc_read_immediate: 0x000b5840 = 0x00000000
+[  136.533411] dc_write_immediate: 0x000b5840 = 0x00000001
+[  136.533415] dc_write_immediate: 0x000b6650 = 0x00000001
+[  136.552936] dc_read_immediate: 0x00000024 = 0x00000000
+[  136.552960] dc_read_immediate: 0x0000201c = 0x00000000
+[  136.552971] dc_read_immediate: 0x0000241c = 0x00000000
+[  136.552980] dc_read_immediate: 0x0000281c = 0x00000000
+[  136.552988] dc_read_immediate: 0x00002c1c = 0x00000000
+[  136.552996] dc_read_immediate: 0x0000301c = 0x00000000
+[  136.553004] dc_read_immediate: 0x0000341c = 0x00000000
+[  136.553013] dc_read_immediate: 0x00040024 = 0x00000000
+[  136.553021] dc_read_immediate: 0x0004201c = 0x00000000
+[  136.553030] dc_read_immediate: 0x0004241c = 0x00000000
+[  136.553038] dc_read_immediate: 0x0004281c = 0x00000000
+[  136.553046] dc_read_immediate: 0x00042c1c = 0x00000000
+[  136.553055] dc_read_immediate: 0x0004301c = 0x00000000
+[  136.553063] dc_read_immediate: 0x0004341c = 0x00000000
+[  136.553071] dc_read_immediate: 0x00083464 = 0x00000002
+[  136.553074] dc_write_immediate: 0x00083464 = 0x00000002
+[  136.553085] dc_read_immediate: 0x0008374c = 0x00000000
+[  136.553093] dc_read_immediate: 0x00083a34 = 0x00000000
+[  136.553101] dc_read_immediate: 0x00083d1c = 0x00000000
+[  136.553109] dc_read_immediate: 0x00082bbc = 0x00000000
+[  136.553117] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.553126] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.553129] dc_isr: frm_start=0x0 frm_done=0x1 wb_frm_done=0x0
+[  136.600167] dc_read_immediate: 0x00000024 = 0x00000000
+[  136.600191] dc_read_immediate: 0x0000201c = 0x00000000
+[  136.600202] dc_read_immediate: 0x0000241c = 0x00000000
+[  136.600211] dc_read_immediate: 0x0000281c = 0x00000000
+[  136.600219] dc_read_immediate: 0x00002c1c = 0x00000000
+[  136.600228] dc_read_immediate: 0x0000301c = 0x00000000
+[  136.600236] dc_read_immediate: 0x0000341c = 0x00000000
+[  136.600244] dc_read_immediate: 0x00040024 = 0x00000000
+[  136.600253] dc_read_immediate: 0x0004201c = 0x00000000
+[  136.600261] dc_read_immediate: 0x0004241c = 0x00000000
+[  136.600269] dc_read_immediate: 0x0004281c = 0x00000000
+[  136.600278] dc_read_immediate: 0x00042c1c = 0x00000000
+[  136.600286] dc_read_immediate: 0x0004301c = 0x00000000
+[  136.600294] dc_read_immediate: 0x0004341c = 0x00000000
+[  136.600302] dc_read_immediate: 0x00083464 = 0x00000001
+[  136.600305] dc_write_immediate: 0x00083464 = 0x00000001
+[  136.600316] dc_read_immediate: 0x0008374c = 0x00000000
+[  136.600324] dc_read_immediate: 0x00083a34 = 0x00000000
+[  136.600333] dc_read_immediate: 0x00083d1c = 0x00000000
+[  136.600341] dc_read_immediate: 0x00082bbc = 0x00000000
+[  136.600349] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.600358] dc_read_immediate: 0x00080008 = 0x00000000
+[  136.600361] dc_isr: frm_start=0x1 frm_done=0x0 wb_frm_done=0x0
+[  144.852010] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  144.852014] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  144.852015] vs_dc_vrr_compute_config: vs_crtc_state->vrr vmin: 2237, vmax: 2796, enable: 0
+[  144.852017] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  144.852017] vs_dc_vrr_compute_config: vs_crtc_state->vrr vmin: 2237, vmax: 2796, enable: 0
+[  144.852021] vs_atomic_helper_check_plane_state, [PLANE:130:Layer0] plane_state->visible: 1
+[  144.852022] vs_atomic_helper_check_plane_state, [PLANE:154:Layer1] plane_state->visible: 1
+[  144.852023] vs_atomic_helper_check_plane_state, [PLANE:178:Layer2] plane_state->visible: 1
+[  144.852024] vs_atomic_helper_check_plane_state, [PLANE:218:Layer4] plane_state->visible: 1
+[  144.852025] vs_dc_check_display: panel scale enable: 0
+[  144.852026] vs_dc_check_display: panel scale enable: 0
+[  144.852027] vs_dc_check_display: panel scale enable: 0
+[  144.852030] ------------[ cut here ]------------
+[  144.852031] vs-drm 0000:01:00.0: [drm] drm_WARN_ON_ONCE(drm_drv_uses_atomic_modeset(dev))
+[  144.852064] WARNING: CPU: 3 PID: 2989 at drivers/gpu/drm/drm_vblank.c:730 drm_crtc_vblank_helper_get_vblank_timestamp_internal+0x32c/0x3e0 [drm]
+[  144.852092] Modules linked in: vs_drm(OE) nfsv3 nfs_acl rpcsec_gss_krb5 auth_rpcgss nfsv4 nfs lockd grace netfs tailm_drv2(OE) tailm_drv(OE) rfcomm snd_seq_dummy snd_hrtimer cmac algif_hash algif_skcipher af_alg qrtr bnep sunrpc binfmt_misc nls_iso8859_1 snd_ctl_led snd_hda_codec_realtek snd_hda_codec_generic snd_hda_scodec_component intel_uncore_frequency intel_uncore_frequency_common snd_sof_pci_intel_tgl snd_sof_pci_intel_cnl snd_sof_intel_hda_generic soundwire_intel soundwire_generic_allocation soundwire_cadence snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_hda_codec_hdmi snd_hda_ext_core snd_sof_pci snd_sof_xtensa_dsp snd_sof snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi soundwire_bus snd_soc_core snd_compress x86_pkg_temp_thermal ac97_bus snd_pcm_dmaengine intel_powerclamp snd_hda_intel snd_intel_dspcfg coretemp snd_intel_sdw_acpi snd_hda_codec iwlmvm kvm_intel snd_hda_core i915 mac80211 snd_hwdep snd_pcm kvm libarc4 snd_seq_midi snd_seq_midi_event snd_rawmidi
+[  144.852120]  crct10dif_pclmul ghash_clmulni_intel drm_buddy sha512_ssse3 processor_thermal_device_pci ttm sha256_ssse3 processor_thermal_device snd_seq btusb iwlwifi processor_thermal_wt_hint sha1_ssse3 btrtl drm_display_helper processor_thermal_rfim intel_rapl_msr aesni_intel snd_seq_device btintel processor_thermal_rapl dell_wmi snd_timer cec mei_hdcp intel_rapl_common crypto_simd btbcm dell_pc rc_core dell_smbios cryptd btmtk platform_profile processor_thermal_wt_req dcdbas bluetooth snd rapl cfg80211 dell_wmi_sysman mei_me i2c_i801 intel_cstate processor_thermal_power_floor drm_kms_helper dell_smm_hwmon dell_wmi_ddv dell_wmi_descriptor firmware_attributes_class wmi_bmof processor_thermal_mbox i2c_mux mei soundcore i2c_algo_bit i2c_smbus int340x_thermal_zone int3400_thermal intel_hid acpi_thermal_rel acpi_pad acpi_tad sparse_keymap mac_hid sch_fq_codel msr parport_pc ppdev lp parport drm efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 nvme nvme_core ahci libahci video crc32_pclmul e1000e vmd wmi
+[  144.852150]  pinctrl_alderlake
+[  144.852151] CPU: 3 UID: 0 PID: 2989 Comm: drmtest Tainted: G           OE      6.12.42 #1
+[  144.852154] Tainted: [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+[  144.852154] Hardware name: Dell Inc. Dell Pro Slim QCS1250/0172D1, BIOS 1.13.2 03/04/2026
+[  144.852155] RIP: 0010:drm_crtc_vblank_helper_get_vblank_timestamp_internal+0x32c/0x3e0 [drm]
+[  144.852172] Code: 4c 8b 67 50 4d 85 e4 75 03 4c 8b 27 e8 fd 91 59 cd 48 c7 c1 80 7d 7c c0 4c 89 e2 48 c7 c7 f4 ae 7c c0 48 89 c6 e8 44 ec b8 cc <0f> 0b eb 1f 4d 85 e4 74 05 4d 8b 64 24 08 44 89 f2 48 c7 c6 f0 7c
+[  144.852173] RSP: 0018:ffff9d4a054079b0 EFLAGS: 00010286
+[  144.852175] RAX: 0000000000000000 RBX: ffffffffc1ec8510 RCX: 0000000000000027
+[  144.852176] RDX: 0000000000000027 RSI: 0000000000000003 RDI: ffff88bebfba18c8
+[  144.852177] RBP: ffff9d4a05407a20 R08: 0000000000000003 R09: 0000000000000001
+[  144.852178] R10: ffffffff8f7db53e R11: 000000008f7db50a R12: ffff88bbc1d3f930
+[  144.852178] R13: 0000000000000000 R14: 0000000000000001 R15: ffff88bbc5572000
+[  144.852179] FS:  00007fafee994740(0000) GS:ffff88bebfb80000(0000) knlGS:0000000000000000
+[  144.852180] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  144.852180] CR2: 00000000157750f8 CR3: 0000000195752003 CR4: 0000000000f72ef0
+[  144.852181] PKRU: 55555554
+[  144.852181] Call Trace:
+[  144.852182]  <TASK>
+[  144.852184]  drm_crtc_vblank_helper_get_vblank_timestamp+0x20/0x30 [drm]
+[  144.852197]  drm_crtc_get_last_vbltimestamp+0x56/0x90 [drm]
+[  144.852209]  drm_crtc_next_vblank_start+0x49/0x90 [drm]
+[  144.852221]  drm_atomic_helper_wait_for_fences+0x8b/0x1f0 [drm_kms_helper]
+[  144.852229]  drm_atomic_helper_commit+0xa1/0x160 [drm_kms_helper]
+[  144.852234]  drm_atomic_commit+0xa9/0xe0 [drm]
+[  144.852244]  ? __pfx___drm_printfn_info+0x10/0x10 [drm]
+[  144.852260]  drm_mode_atomic_ioctl+0xa9d/0xc90 [drm]
+[  144.852271]  ? __pfx_drm_mode_atomic_ioctl+0x10/0x10 [drm]
+[  144.852281]  drm_ioctl_kernel+0xab/0x110 [drm]
+[  144.852298]  drm_ioctl+0x2ca/0x580 [drm]
+[  144.852314]  ? __pfx_drm_mode_atomic_ioctl+0x10/0x10 [drm]
+[  144.852325]  ? do_pte_missing+0x20f/0xe70
+[  144.852328]  ? vfs_write+0x2b6/0x430
+[  144.852330]  __x64_sys_ioctl+0x96/0xd0
+[  144.852331]  x64_sys_call+0x1209/0x20d0
+[  144.852333]  do_syscall_64+0x6f/0x110
+[  144.852336]  ? __count_memcg_events+0x7b/0x140
+[  144.852338]  ? handle_mm_fault+0x1a0/0x280
+[  144.852339]  ? do_user_addr_fault+0x569/0x820
+[  144.852341]  ? irqentry_exit_to_user_mode+0x33/0x170
+[  144.852343]  ? irqentry_exit+0x3f/0x50
+[  144.852344]  ? exc_page_fault+0x8d/0x180
+[  144.852345]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[  144.852347] RIP: 0033:0x7fafee3250bd
+[  144.852348] Code: 04 25 28 00 00 00 48 89 45 c8 31 c0 48 8d 45 10 c7 45 b0 10 00 00 00 48 89 45 b8 48 8d 45 d0 48 89 45 c0 b8 10 00 00 00 0f 05 <89> c2 3d 00 f0 ff ff 77 1a 48 8b 45 c8 64 48 2b 04 25 28 00 00 00
+[  144.852349] RSP: 002b:00007ffff93157f0 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  144.852350] RAX: ffffffffffffffda RBX: 00007ffff9315890 RCX: 00007fafee3250bd
+[  144.852351] RDX: 00007ffff9315890 RSI: 00000000c03864bc RDI: 0000000000000003
+[  144.852351] RBP: 00007ffff9315840 R08: 000000000000000b R09: 000000000000000b
+[  144.852352] R10: 0000000015771fb0 R11: 0000000000000246 R12: 0000000015771ba0
+[  144.852352] R13: 0000000000000003 R14: 00000000157719e0 R15: 0000000015771a60
+[  144.852353]  </TASK>
+[  144.852354] ---[ end trace 0000000000000000 ]---
+[  144.852358] display_set_mode: display 0 is setting panel mode
+[  144.852359] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  144.852360] update_display_std_splice: display0 splice: 0, enable: 0
+[  144.852368] dc_read_immediate: 0x00010000 = 0x00000000
+[  144.852369] dc_write_immediate: 0x00010000 = 0x00000000
+[  144.852377] dc_read_immediate: 0x0008c000 = 0x00000000
+[  144.852377] dc_write_immediate: 0x0008c000 = 0x00000000
+[  144.852385] dc_read_immediate: 0x000b6270 = 0x00000000
+[  144.852385] dc_write_immediate: 0x000b6270 = 0x00000000
+[  144.852386] vs_dpu_reg_cache_update, entry_count: 0, [0x000c6000, 0x00000000].
+[  144.852389] dc_read: 0x00010088 = 0x00000009
+[  144.852389] dc_write: 0x00010e08 = 0x00000000
+[  144.852391] dc_write: 0x00010088 = 0x00000008
+[  144.852391] dc_write: 0x000d6000 = 0x00000000
+[  144.852392] dc_write: 0x00010290 = 0x00000000
+[  144.852393] dc_write: 0x00010288 = 0x00000000
+[  144.852394] dc_write_immediate: 0x000b60f4 = 0x00000000
+[  144.852408] dc_read_immediate: 0x00010000 = 0x00000000
+[  144.852408] dc_write_immediate: 0x00010000 = 0x00000001
+[  144.852416] dc_read_immediate: 0x0008c000 = 0x00000000
+[  144.852416] dc_write_immediate: 0x0008c000 = 0x00000001
+[  144.852424] dc_read_immediate: 0x000b6270 = 0x00000000
+[  144.852424] dc_write_immediate: 0x000b6270 = 0x00000001
+[  144.852425] vs_dc_commit_non_shadow_reg_cache: waitting display 0 frm done
+[  170.521498] dc_read_immediate: 0x00000024 = 0x00000000
+[  170.521523] dc_read_immediate: 0x0000201c = 0x00000000
+[  170.521534] dc_read_immediate: 0x0000241c = 0x00000000
+[  170.521543] dc_read_immediate: 0x0000281c = 0x00000000
+[  170.521551] dc_read_immediate: 0x00002c1c = 0x00000000
+[  170.521560] dc_read_immediate: 0x0000301c = 0x00000000
+[  170.521568] dc_read_immediate: 0x0000341c = 0x00000000
+[  170.521576] dc_read_immediate: 0x00040024 = 0x00000000
+[  170.521585] dc_read_immediate: 0x0004201c = 0x00000000
+[  170.521593] dc_read_immediate: 0x0004241c = 0x00000000
+[  170.521602] dc_read_immediate: 0x0004281c = 0x00000000
+[  170.521610] dc_read_immediate: 0x00042c1c = 0x00000000
+[  170.521618] dc_read_immediate: 0x0004301c = 0x00000000
+[  170.521626] dc_read_immediate: 0x0004341c = 0x00000000
+[  170.521635] dc_read_immediate: 0x00083464 = 0x00000002
+[  170.521638] dc_write_immediate: 0x00083464 = 0x00000002
+[  170.521649] dc_read_immediate: 0x0008374c = 0x00000000
+[  170.521657] dc_read_immediate: 0x00083a34 = 0x00000000
+[  170.521665] dc_read_immediate: 0x00083d1c = 0x00000000
+[  170.521673] dc_read_immediate: 0x00082bbc = 0x00000000
+[  170.521682] dc_read_immediate: 0x00080008 = 0x00000000
+[  170.521690] dc_read_immediate: 0x00080008 = 0x00000000
+[  170.521693] dc_isr: frm_start=0x0 frm_done=0x1 wb_frm_done=0x0
+[  170.521816] vs_dc_commit_non_shadow_reg_cache: committing display 0 non shadow reg cache
+[  170.521834] vs_dpu_reg_cache_commit: i = 0, 0x000c6000 = 0x00000000
+[  170.521841] dc_write_immediate: 0x000b6104 = 0x00000002
+[  170.521853] dc_read_immediate: 0x000c5014 = 0x00000000
+[  170.521861] dc_read_immediate: 0x000909bc = 0x00000000
+[  170.521864] display_id:0, output_id:0, dest:0, group mask:0x7 leader_id:2
+[  170.521888] dc_read: 0x000b60e8 = 0x00000000
+[  170.521898] dc_read_immediate: 0x00083460 = 0x00000007
+[  170.521901] dc_write_immediate: 0x00083460 = 0x00000000
+[  170.521912] dc_read_immediate: 0x00080004 = 0x00000000
+[  170.521915] dc_write_immediate: 0x00080004 = 0x00000000
+[  170.522002] display_set_mode: display 2 is setting panel mode
+[  170.522008] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  170.522012] update_display_std_splice: display2 splice: 0, enable: 0
+[  170.522035] dc_read_immediate: 0x00018000 = 0x00000000
+[  170.522038] dc_write_immediate: 0x00018000 = 0x00000000
+[  170.522048] dc_read_immediate: 0x000ac000 = 0x00000000
+[  170.522052] dc_write_immediate: 0x000ac000 = 0x00000000
+[  170.522062] dc_read_immediate: 0x000b6a30 = 0x00000001
+[  170.522065] dc_write_immediate: 0x000b6a30 = 0x00000000
+[  170.522069] vs_dpu_reg_cache_update, entry_count: 0, [0x000c8000, 0x00000002].
+[  170.522074] dc_read: 0x00018088 = 0x00000001
+[  170.522077] dc_write: 0x00018e08 = 0x00000000
+[  170.522083] dc_write: 0x00018088 = 0x00000000
+[  170.522086] dc_write: 0x000d8000 = 0x00000002
+[  170.522090] dc_write: 0x00018290 = 0x00000000
+[  170.522093] dc_write: 0x00018288 = 0x00000000
+[  170.522099] dc_write_immediate: 0x000b68b4 = 0x00000000
+[  170.522110] dc_read_immediate: 0x00018000 = 0x00000000
+[  170.522115] dc_write_immediate: 0x00018000 = 0x00000001
+[  170.522128] dc_read_immediate: 0x000ac000 = 0x00000000
+[  170.522133] dc_write_immediate: 0x000ac000 = 0x00000001
+[  170.522146] dc_read_immediate: 0x000b6a30 = 0x00000000
+[  170.522151] dc_write_immediate: 0x000b6a30 = 0x00000001
+[  170.522155] vs_dc_commit_non_shadow_reg_cache: committing display 2 non shadow reg cache
+[  170.522160] vs_dpu_reg_cache_commit: i = 0, 0x000c8000 = 0x00000002
+[  170.522165] dc_write_immediate: 0x000b6104 = 0x00000002
+[  170.522176] dc_read_immediate: 0x000c5014 = 0x00000000
+[  170.522186] dc_read_immediate: 0x000909bc = 0x00000000
+[  170.522190] display_id:2, output_id:2, dest:0, group mask:0x7 leader_id:2
+[  170.522267] dc_write_immediate: 0x000b6080 = 0x00000001
+[  170.522309] display_set_mode: display 0 is setting panel mode
+[  170.522315] dc_write_immediate: 0x000c9000 = 0x00000000
+[  170.522320] dc_write_immediate: 0x000cb000 = 0x00000000
+[  170.522326] dc_write_immediate: 0x000ce000 = 0x00000000
+[  170.522331] dc_write_immediate: 0x000cf000 = 0x00000000
+[  170.522336] dc_write_immediate: 0x000d0000 = 0x00000000
+[  170.522341] dc_write_immediate: 0x000d1000 = 0x00000000
+[  170.522346] dc_write_immediate: 0x000d2000 = 0x00000000
+[  170.522350] dc_write_immediate: 0x000d3000 = 0x00000000
+[  170.522354] dc_write: 0x000b62b8 = 0x00000001
+[  170.522359] dc_write: 0x0008c028 = 0x00000000
+[  170.522365] vs_dpu_reg_cache_update, entry_count: 0, [0x000b609c, 0x00000000].
+[  170.522370] dc_write: 0x000b60ac = 0x000004d0
+[  170.522377] dc_write: 0x000b60a8 = 0x000007a8
+[  170.522383] dc_write: 0x000b60a4 = 0x00002d00
+[  170.522389] dc_write: 0x000b60a0 = 0x000002d8
+[  170.522394] vs_dpu_reg_cache_update, entry_count: 1, [0x000b60b0, 0x00000001].
+[  170.522439] dc_write: 0x000b60c0 = 0x0000000a
+[  170.522444] dc_write: 0x000b60bc = 0x0000001b
+[  170.522451] dc_write: 0x000b60b8 = 0x00000870
+[  170.522456] dc_write: 0x000b60b4 = 0x00000003
+[  170.522462] dc_write: 0x000909cc = 0x00002d00
+[  170.522467] dc_write: 0x000909d0 = 0x00000870
+[  170.522472] vs_dpu_reg_cache_update, entry_count: 2, [0x000b6088, 0x00000024].
+[  170.522480] dc_read: 0x000b60e8 = 0x00000000
+[  170.522523] dc_read_immediate: 0x00083460 = 0x00000000
+[  170.522529] dc_write_immediate: 0x00083460 = 0x00000007
+[  170.522541] dc_read_immediate: 0x00080004 = 0x00000000
+[  170.522547] dc_write_immediate: 0x00080004 = 0x00000020
+[  170.522554] dc_read: 0x000b60e8 = 0x00000000
+[  170.522564] display_set_mode: display 2 is setting panel mode
+[  170.522570] dc_write_immediate: 0x000c9000 = 0x00000002
+[  170.522575] dc_write_immediate: 0x000cb000 = 0x00000002
+[  170.522581] dc_write_immediate: 0x000ce000 = 0x00000002
+[  170.522587] dc_write_immediate: 0x000cf000 = 0x00000002
+[  170.522593] dc_write_immediate: 0x000d0000 = 0x00000002
+[  170.522598] dc_write_immediate: 0x000d1000 = 0x00000002
+[  170.522604] dc_write_immediate: 0x000d2000 = 0x00000002
+[  170.522609] dc_write_immediate: 0x000d3000 = 0x00000002
+[  170.522614] dc_write: 0x000b6a78 = 0x00000001
+[  170.522620] dc_write: 0x000ac010 = 0x00000000
+[  170.522626] vs_dpu_reg_cache_update, entry_count: 0, [0x000b685c, 0x00000000].
+[  170.522632] dc_write: 0x000b686c = 0x000001a0
+[  170.522639] dc_write: 0x000b6868 = 0x000002e0
+[  170.522645] dc_write: 0x000b6864 = 0x00000f00
+[  170.522650] dc_write: 0x000b6860 = 0x00000140
+[  170.522656] vs_dpu_reg_cache_update, entry_count: 1, [0x000b6870, 0x00000001].
+[  170.522662] dc_write: 0x000b6880 = 0x00000005
+[  170.522668] dc_write: 0x000b687c = 0x00000045
+[  170.522673] dc_write: 0x000b6878 = 0x00000870
+[  170.522679] dc_write: 0x000b6874 = 0x00000003
+[  170.522684] dc_write: 0x000ac5e4 = 0x00000f00
+[  170.522690] dc_write: 0x000ac5e8 = 0x00000870
+[  170.522695] vs_dpu_reg_cache_update, entry_count: 2, [0x000b6848, 0x00000024].
+[  170.522703] dc_read: 0x000b68a8 = 0x00000000
+[  170.522783] dc_read_immediate: 0x00083a30 = 0x00000000
+[  170.522789] dc_write_immediate: 0x00083a30 = 0x00000007
+[  170.522802] dc_read_immediate: 0x00080004 = 0x00000020
+[  170.522807] dc_write_immediate: 0x00080004 = 0x00000020
+[  170.522813] dc_read: 0x000b68a8 = 0x00000000
+[  170.522830] dc_read_immediate: 0x000b5080 = 0x00000000
+[  170.522834] dc_write_immediate: 0x000b5080 = 0x00000000
+[  170.522839] wb_set_fb_v2: set post wb 0 fb
+[  170.522848] dc_read_immediate: 0x00082e94 = 0x00000000
+[  170.522854] dc_write_immediate: 0x00082e94 = 0x00000003
+[  170.522860] dc_read: 0x000b50a4 = 0x00000000
+[  170.522865] dc_write: 0x000b50a4 = 0x00000000
+[  170.522870] dc_write: 0x000b50ac = 0x00000000
+[  170.522876] dc_write: 0x000b5088 = 0x00003c00
+[  170.522882] dc_write: 0x000b5120 = 0x00000000
+[  170.522888] dc_write: 0x000b5124 = 0x00000000
+[  170.522894] dc_write: 0x000b508c = 0x0ec00000
+[  170.522900] dc_write: 0x000b5090 = 0x00000001
+[  170.522907] dc_write: 0x000b5110 = 0x00000000
+[  170.522913] dc_write: 0x000b5114 = 0x00000000
+[  170.522919] dc_write: 0x000b5118 = 0x00000000
+[  170.522925] dc_write: 0x000b511c = 0x00000000
+[  170.522932] dc_write: 0x000b5084 = 0x00000001
+[  170.522936] dc_write_immediate: 0x000c5dc0 = 0x0000000b
+[  170.522948] dc_read_immediate: 0x000b5840 = 0x00000000
+[  170.522953] dc_write_immediate: 0x000b5840 = 0x00000000
+[  170.522958] wb_set_fb_v2: set post wb 1 fb
+[  170.522969] dc_read_immediate: 0x0008317c = 0x00000000
+[  170.522974] dc_write_immediate: 0x0008317c = 0x00000003
+[  170.522979] dc_write_immediate: 0x000b5000 = 0x00000001
+[  170.522985] dc_read: 0x000b5864 = 0x00000000
+[  170.522991] dc_write: 0x000b5864 = 0x00000000
+[  170.522997] dc_write: 0x000b586c = 0x00000000
+[  170.523003] dc_write: 0x000b5848 = 0x00003c00
+[  170.523009] dc_write: 0x000b58e0 = 0x00000000
+[  170.523016] dc_write: 0x000b58e4 = 0x00000000
+[  170.523022] dc_write: 0x000b584c = 0x10c00000
+[  170.523028] dc_write: 0x000b5850 = 0x00000001
+[  170.523033] dc_write: 0x000b58d0 = 0x00000000
+[  170.523039] dc_write: 0x000b58d4 = 0x00000000
+[  170.523045] dc_write: 0x000b58d8 = 0x00000000
+[  170.523052] dc_write: 0x000b58dc = 0x00000000
+[  170.523057] dc_write: 0x000b5844 = 0x00000001
+[  170.523062] dc_write_immediate: 0x000c5ee0 = 0x00000007
+[  170.523069] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  170.523075] update_display_std_splice: display0 splice: 0, enable: 0
+[  170.523082] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  170.523088] update_display_std_splice: display1 splice: 0, enable: 0
+[  170.523094] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  170.523100] update_display_std_splice: display2 splice: 0, enable: 0
+[  170.523113] get_roi_image_width : width: 3840, height: 2160.
+[  170.523235] get_roi_image_width : width: 3840, height: 2160.
+[  170.523256] get_roi_image_width : width: 3840, height: 2160.
+[  170.523266] get_roi_image_width : width: 1280, height: 720.
+[  170.523281] dc_read_immediate: 0x00010000 = 0x00000001
+[  170.523287] dc_write_immediate: 0x00010000 = 0x00000000
+[  170.523299] dc_read_immediate: 0x0008c000 = 0x00000001
+[  170.523304] dc_write_immediate: 0x0008c000 = 0x00000000
+[  170.523316] dc_read_immediate: 0x000b6270 = 0x00000001
+[  170.523319] dc_write_immediate: 0x000b6270 = 0x00000000
+[  170.523325] vs_dpu_reg_cache_update, entry_count: 3, [0x000c6000, 0x00000000].
+[  170.523331] dc_write: 0x0001002c = 0x12c00000
+[  170.523342] dc_write: 0x00010030 = 0x00000001
+[  170.523347] dc_write: 0x00010034 = 0x00000000
+[  170.523350] dc_write: 0x00010038 = 0x00000000
+[  170.523355] dc_write: 0x0001003c = 0x00000000
+[  170.523359] dc_write: 0x00010040 = 0x00000000
+[  170.523363] dc_write: 0x00010044 = 0x00003c00
+[  170.523368] dc_write: 0x00010048 = 0x00000000
+[  170.523372] dc_write: 0x0001004c = 0x00000000
+[  170.523376] dc_write: 0x0001005c = 0x08700f00
+[  170.523383] dc_read: 0x00010088 = 0x00000008
+[  170.523388] dc_write: 0x00010e08 = 0x00000000
+[  170.523393] dc_write: 0x00010088 = 0x00000009
+[  170.523397] dc_write: 0x000d6000 = 0x00000000
+[  170.523403] dc_read: 0x0001028c = 0x00000010
+[  170.523407] dc_write: 0x0001028c = 0x00000010
+[  170.523412] dc_read: 0x00010088 = 0x00000009
+[  170.523416] dc_write: 0x00010088 = 0x00000009
+[  170.523420] dc_write: 0x0001029c = 0x00000000
+[  170.523424] dc_write: 0x000102a0 = 0x08700f00
+[  170.523429] dc_read: 0x000d6004 = 0x00000000
+[  170.523433] dc_write: 0x000d6004 = 0x00000000
+[  170.523436] dc_write: 0x00010290 = 0x00000000
+[  170.523441] dc_write: 0x00010288 = 0x00000000
+[  170.523447] dc_write_immediate: 0x000b60f4 = 0x00000000
+[  170.523458] dc_read_immediate: 0x00010000 = 0x00000000
+[  170.523462] dc_write_immediate: 0x00010000 = 0x00000001
+[  170.523474] dc_read_immediate: 0x0008c000 = 0x00000000
+[  170.523478] dc_write_immediate: 0x0008c000 = 0x00000001
+[  170.523488] dc_read_immediate: 0x000b6270 = 0x00000000
+[  170.523493] dc_write_immediate: 0x000b6270 = 0x00000001
+[  170.523497] vs_dc_commit_non_shadow_reg_cache: committing display 0 non shadow reg cache
+[  170.523501] vs_dpu_reg_cache_commit: i = 0, 0x000b609c = 0x00000000
+[  170.523506] vs_dpu_reg_cache_commit: i = 1, 0x000b60b0 = 0x00000001
+[  170.523511] vs_dpu_reg_cache_commit: i = 2, 0x000b6088 = 0x00000024
+[  170.523515] vs_dpu_reg_cache_commit: i = 3, 0x000c6000 = 0x00000000
+[  170.523520] dc_write_immediate: 0x000b6104 = 0x00000002
+[  170.523570] dc_read_immediate: 0x000c5014 = 0x00000000
+[  170.523579] dc_read_immediate: 0x000909bc = 0x00000000
+[  170.523583] display_id:0, output_id:0, dest:0, group mask:0x7 leader_id:2
+[  170.523596] dc_read_immediate: 0x00014000 = 0x00000000
+[  170.523600] dc_write_immediate: 0x00014000 = 0x00000000
+[  170.523611] dc_read_immediate: 0x00020000 = 0x00000000
+[  170.523614] dc_write_immediate: 0x00020000 = 0x00000000
+[  170.523625] dc_read_immediate: 0x000b5840 = 0x00000000
+[  170.523629] dc_write_immediate: 0x000b5840 = 0x00000000
+[  170.523639] dc_read_immediate: 0x0009c000 = 0x00000000
+[  170.523643] dc_write_immediate: 0x0009c000 = 0x00000000
+[  170.523653] dc_read_immediate: 0x000b6650 = 0x00000001
+[  170.523657] dc_write_immediate: 0x000b6650 = 0x00000000
+[  170.523662] vs_dpu_reg_cache_update, entry_count: 0, [0x000c7000, 0x00000001].
+[  170.523667] dc_write: 0x0001402c = 0x14c00000
+[  170.523672] dc_write: 0x00014030 = 0x00000001
+[  170.523676] dc_write: 0x00014034 = 0x00000000
+[  170.523680] dc_write: 0x00014038 = 0x00000000
+[  170.523684] dc_write: 0x0001403c = 0x00000000
+[  170.523688] dc_write: 0x00014040 = 0x00000000
+[  170.523691] dc_write: 0x00014044 = 0x00003c00
+[  170.523696] dc_write: 0x00014048 = 0x00000000
+[  170.523700] dc_write: 0x0001404c = 0x00000000
+[  170.523704] dc_write: 0x0001405c = 0x08700f00
+[  170.523708] dc_read: 0x00014088 = 0x00000009
+[  170.523711] dc_write: 0x00014e08 = 0x00000000
+[  170.523716] dc_write: 0x00014088 = 0x00000009
+[  170.523720] dc_write: 0x000d7000 = 0x00000001
+[  170.523725] dc_read: 0x0001428c = 0x00000010
+[  170.523728] dc_write: 0x0001428c = 0x00000010
+[  170.523732] dc_read: 0x00014088 = 0x00000009
+[  170.523735] dc_write: 0x00014088 = 0x00000009
+[  170.523740] dc_write: 0x0001429c = 0x00000000
+[  170.523744] dc_write: 0x000142a0 = 0x08700f00
+[  170.523749] dc_read: 0x000d7004 = 0x00000000
+[  170.523752] dc_write: 0x000d7004 = 0x00000000
+[  170.523755] vs_dpu_reg_cache_update, entry_count: 1, [0x000ca000, 0x00000001].
+[  170.523760] dc_write: 0x0002002c = 0x18c00000
+[  170.523765] dc_write: 0x00020030 = 0x00000001
+[  170.523769] dc_write: 0x00020034 = 0x00000000
+[  170.523773] dc_write: 0x00020038 = 0x00000000
+[  170.523776] dc_write: 0x0002003c = 0x00000000
+[  170.523781] dc_write: 0x00020040 = 0x00000000
+[  170.523784] dc_write: 0x00020044 = 0x00001400
+[  170.523789] dc_write: 0x00020048 = 0x00000000
+[  170.523793] dc_write: 0x0002004c = 0x00000000
+[  170.523797] dc_write: 0x0002005c = 0x02d00500
+[  170.523801] dc_read: 0x00020088 = 0x00000001
+[  170.523805] dc_write: 0x00020e08 = 0x00000000
+[  170.523809] dc_write: 0x00020088 = 0x00000001
+[  170.523813] dc_write: 0x000da000 = 0x00000004
+[  170.523818] dc_read: 0x0002028c = 0x00000010
+[  170.523821] dc_write: 0x0002028c = 0x00000010
+[  170.523826] dc_write: 0x0002029c = 0x00000a00
+[  170.523831] dc_write: 0x000202a0 = 0x02d00500
+[  170.523835] dc_read: 0x000da004 = 0x00000000
+[  170.523838] dc_write: 0x000da004 = 0x00000000
+[  170.523842] dc_write_immediate: 0x000b64d4 = 0x00000000
+[  170.523854] dc_read_immediate: 0x00014000 = 0x00000000
+[  170.523857] dc_write_immediate: 0x00014000 = 0x00000001
+[  170.523868] dc_read_immediate: 0x00020000 = 0x00000000
+[  170.523872] dc_write_immediate: 0x00020000 = 0x00000001
+[  170.523883] dc_read_immediate: 0x000b5840 = 0x00000000
+[  170.523887] dc_write_immediate: 0x000b5840 = 0x00000001
+[  170.523890] dc_write_immediate: 0x000b6650 = 0x00000001
+[  170.523900] dc_read_immediate: 0x0009c000 = 0x00000000
+[  170.523904] dc_write_immediate: 0x0009c000 = 0x00000001
+[  170.523915] dc_read_immediate: 0x000b6650 = 0x00000001
+[  170.523918] dc_write_immediate: 0x000b6650 = 0x00000001
+[  170.523922] vs_dc_commit_non_shadow_reg_cache: committing display 1 non shadow reg cache
+[  170.523926] vs_dpu_reg_cache_commit: i = 0, 0x000c7000 = 0x00000001
+[  170.523930] vs_dpu_reg_cache_commit: i = 1, 0x000ca000 = 0x00000001
+[  170.523935] dc_write_immediate: 0x000b6104 = 0x00000002
+[  170.523945] dc_read_immediate: 0x000c5014 = 0x00000000
+[  170.523954] dc_read_immediate: 0x000909bc = 0x00000000
+[  170.523958] display_id:1, output_id:1, dest:0, group mask:0x7 leader_id:2
+[  170.524086] dc_read_immediate: 0x00018000 = 0x00000001
+[  170.524100] dc_write_immediate: 0x00018000 = 0x00000000
+[  170.524112] dc_read_immediate: 0x000b5080 = 0x00000000
+[  170.524115] dc_write_immediate: 0x000b5080 = 0x00000000
+[  170.524125] dc_read_immediate: 0x000ac000 = 0x00000001
+[  170.524128] dc_write_immediate: 0x000ac000 = 0x00000000
+[  170.524139] dc_read_immediate: 0x000b6a30 = 0x00000001
+[  170.524141] dc_write_immediate: 0x000b6a30 = 0x00000000
+[  170.524146] vs_dpu_reg_cache_update, entry_count: 3, [0x000c8000, 0x00000002].
+[  170.524151] dc_write: 0x0001802c = 0x16c00000
+[  170.524159] dc_write: 0x00018030 = 0x00000001
+[  170.524163] dc_write: 0x00018034 = 0x00000000
+[  170.524166] dc_write: 0x00018038 = 0x00000000
+[  170.524169] dc_write: 0x0001803c = 0x00000000
+[  170.524172] dc_write: 0x00018040 = 0x00000000
+[  170.524175] dc_write: 0x00018044 = 0x00003c00
+[  170.524179] dc_write: 0x00018048 = 0x00000000
+[  170.524183] dc_write: 0x0001804c = 0x00000000
+[  170.524186] dc_write: 0x0001805c = 0x08700f00
+[  170.524190] dc_read: 0x00018088 = 0x00000000
+[  170.524193] dc_write: 0x00018e08 = 0x00000000
+[  170.524196] dc_write: 0x00018088 = 0x00000001
+[  170.524199] dc_write: 0x000d8000 = 0x00000002
+[  170.524203] dc_read: 0x0001828c = 0x00000010
+[  170.524207] dc_write: 0x0001828c = 0x00000010
+[  170.524211] dc_write: 0x0001829c = 0x00000000
+[  170.524214] dc_write: 0x000182a0 = 0x08700f00
+[  170.524218] dc_read: 0x000d8004 = 0x00000000
+[  170.524221] dc_write: 0x000d8004 = 0x00000000
+[  170.524224] dc_write: 0x00018290 = 0x00000000
+[  170.524227] dc_write: 0x00018288 = 0x00000000
+[  170.524232] dc_write_immediate: 0x000b68b4 = 0x00000000
+[  170.524242] dc_read_immediate: 0x00018000 = 0x00000000
+[  170.524245] dc_write_immediate: 0x00018000 = 0x00000001
+[  170.524255] dc_read_immediate: 0x000b5080 = 0x00000000
+[  170.524258] dc_write_immediate: 0x000b5080 = 0x00000001
+[  170.524261] dc_write_immediate: 0x000b6650 = 0x00000001
+[  170.524272] dc_read_immediate: 0x000ac000 = 0x00000000
+[  170.524274] dc_write_immediate: 0x000ac000 = 0x00000001
+[  170.524284] dc_read_immediate: 0x000b6a30 = 0x00000000
+[  170.524287] dc_write_immediate: 0x000b6a30 = 0x00000001
+[  170.524290] vs_dc_commit_non_shadow_reg_cache: committing display 2 non shadow reg cache
+[  170.524294] vs_dpu_reg_cache_commit: i = 0, 0x000b685c = 0x00000000
+[  170.524298] vs_dpu_reg_cache_commit: i = 1, 0x000b6870 = 0x00000001
+[  170.524301] vs_dpu_reg_cache_commit: i = 2, 0x000b6848 = 0x00000024
+[  170.524304] vs_dpu_reg_cache_commit: i = 3, 0x000c8000 = 0x00000002
+[  170.524308] dc_write_immediate: 0x000b6104 = 0x00000002
+[  170.524342] dc_read_immediate: 0x000c5014 = 0x00000000
+[  170.524350] dc_read_immediate: 0x000909bc = 0x00000000
+[  170.524353] display_id:2, output_id:2, dest:0, group mask:0x7 leader_id:2
+[  170.524362] dc_read: 0x000b68a8 = 0x00000000
+[  170.524371] dc_read_immediate: 0x00083a30 = 0x00000007
+[  170.524374] dc_write_immediate: 0x00083a30 = 0x00000000
+[  170.524385] dc_read_immediate: 0x00080004 = 0x00000020
+[  170.524388] dc_write_immediate: 0x00080004 = 0x00000000
+[  170.524562] dc_write_immediate: 0x000b6080 = 0x00000001
+[  170.568504] dc_read_immediate: 0x00000024 = 0x00000000
+[  170.568529] dc_read_immediate: 0x0000201c = 0x00000000
+[  170.568540] dc_read_immediate: 0x0000241c = 0x00000000
+[  170.568549] dc_read_immediate: 0x0000281c = 0x00000000
+[  170.568557] dc_read_immediate: 0x00002c1c = 0x00000000
+[  170.568566] dc_read_immediate: 0x0000301c = 0x00000000
+[  170.568574] dc_read_immediate: 0x0000341c = 0x00000000
+[  170.568582] dc_read_immediate: 0x00040024 = 0x00000000
+[  170.568591] dc_read_immediate: 0x0004201c = 0x00000000
+[  170.568600] dc_read_immediate: 0x0004241c = 0x00000000
+[  170.568608] dc_read_immediate: 0x0004281c = 0x00000000
+[  170.568616] dc_read_immediate: 0x00042c1c = 0x00000000
+[  170.568624] dc_read_immediate: 0x0004301c = 0x00000000
+[  170.568633] dc_read_immediate: 0x0004341c = 0x00000000
+[  170.568641] dc_read_immediate: 0x00083464 = 0x00000001
+[  170.568644] dc_write_immediate: 0x00083464 = 0x00000001
+[  170.568655] dc_read_immediate: 0x0008374c = 0x00000000
+[  170.568663] dc_read_immediate: 0x00083a34 = 0x00000000
+[  170.568671] dc_read_immediate: 0x00083d1c = 0x00000000
+[  170.568679] dc_read_immediate: 0x00082bbc = 0x00000000
+[  170.568687] dc_read_immediate: 0x00082e98 = 0x00000000
+[  170.568696] dc_read_immediate: 0x00083180 = 0x00000000
+[  170.568704] dc_read_immediate: 0x00080008 = 0x00000000
+[  170.568712] dc_read_immediate: 0x00080008 = 0x00000000
+[  170.568715] dc_isr: frm_start=0x1 frm_done=0x0 wb_frm_done=0x0
+[  204.489867] dc_read_immediate: 0x00000024 = 0x00000000
+[  204.489893] dc_read_immediate: 0x0000201c = 0x00000000
+[  204.489904] dc_read_immediate: 0x0000241c = 0x00000000
+[  204.489913] dc_read_immediate: 0x0000281c = 0x00000000
+[  204.489921] dc_read_immediate: 0x00002c1c = 0x00000000
+[  204.489930] dc_read_immediate: 0x0000301c = 0x00000000
+[  204.489938] dc_read_immediate: 0x0000341c = 0x00000000
+[  204.489946] dc_read_immediate: 0x00040024 = 0x00000000
+[  204.489955] dc_read_immediate: 0x0004201c = 0x00000000
+[  204.489963] dc_read_immediate: 0x0004241c = 0x00000000
+[  204.489972] dc_read_immediate: 0x0004281c = 0x00000000
+[  204.489980] dc_read_immediate: 0x00042c1c = 0x00000000
+[  204.489988] dc_read_immediate: 0x0004301c = 0x00000000
+[  204.489996] dc_read_immediate: 0x0004341c = 0x00000000
+[  204.490004] dc_read_immediate: 0x00083464 = 0x00000002
+[  204.490007] dc_write_immediate: 0x00083464 = 0x00000002
+[  204.490018] dc_read_immediate: 0x0008374c = 0x00000000
+[  204.490026] dc_read_immediate: 0x00083a34 = 0x00000000
+[  204.490034] dc_read_immediate: 0x00083d1c = 0x00000000
+[  204.490042] dc_read_immediate: 0x00082bbc = 0x00000000
+[  204.490051] dc_read_immediate: 0x00082e98 = 0x00000000
+[  204.490059] dc_read_immediate: 0x00083180 = 0x00000000
+[  204.490067] dc_read_immediate: 0x00080008 = 0x00000000
+[  204.490076] dc_read_immediate: 0x00080008 = 0x00000000
+[  204.490079] dc_isr: frm_start=0x0 frm_done=0x1 wb_frm_done=0x0
+[  204.536898] dc_read_immediate: 0x00000024 = 0x00000000
+[  204.536923] dc_read_immediate: 0x0000201c = 0x00000000
+[  204.536934] dc_read_immediate: 0x0000241c = 0x00000000
+[  204.536942] dc_read_immediate: 0x0000281c = 0x00000000
+[  204.536951] dc_read_immediate: 0x00002c1c = 0x00000000
+[  204.536959] dc_read_immediate: 0x0000301c = 0x00000000
+[  204.536967] dc_read_immediate: 0x0000341c = 0x00000000
+[  204.536975] dc_read_immediate: 0x00040024 = 0x00000000
+[  204.536984] dc_read_immediate: 0x0004201c = 0x00000000
+[  204.536992] dc_read_immediate: 0x0004241c = 0x00000000
+[  204.537000] dc_read_immediate: 0x0004281c = 0x00000000
+[  204.537009] dc_read_immediate: 0x00042c1c = 0x00000000
+[  204.537018] dc_read_immediate: 0x0004301c = 0x00000000
+[  204.537026] dc_read_immediate: 0x0004341c = 0x00000000
+[  204.537034] dc_read_immediate: 0x00083464 = 0x00000001
+[  204.537037] dc_write_immediate: 0x00083464 = 0x00000001
+[  204.537048] dc_read_immediate: 0x0008374c = 0x00000000
+[  204.537056] dc_read_immediate: 0x00083a34 = 0x00000000
+[  204.537064] dc_read_immediate: 0x00083d1c = 0x00000000
+[  204.537073] dc_read_immediate: 0x00082bbc = 0x00000000
+[  204.537081] dc_read_immediate: 0x00082e98 = 0x00000002
+[  204.537084] dc_write_immediate: 0x00082e98 = 0x00000002
+[  204.537095] dc_read_immediate: 0x00083180 = 0x00000002
+[  204.537098] dc_write_immediate: 0x00083180 = 0x00000002
+[  204.537108] dc_read_immediate: 0x00080008 = 0x00000000
+[  204.537117] dc_read_immediate: 0x00080008 = 0x00000000
+[  204.537120] dc_isr: frm_start=0x1 frm_done=0x0 wb_frm_done=0x0
+[  204.537135] dc_isr: data lost intr for wb0
+[  204.537138] vs_writeback_handle_vblank: connector_id=0 armed=1
+[  204.537180] dc_read_immediate: 0x000b5080 = 0x00000000
+[  204.537185] dc_write_immediate: 0x000b5080 = 0x00000000
+[  204.537188] wb_set_fb_v2: set post wb 0 fb
+[  204.537197] dc_read_immediate: 0x00082e94 = 0x00000003
+[  204.537200] dc_write_immediate: 0x00082e94 = 0x00000000
+[  204.537203] dc_write: 0x000b5084 = 0x00000000
+[  204.537220] dc_read_immediate: 0x000b5080 = 0x00000000
+[  204.537223] dc_write_immediate: 0x000b5080 = 0x00000001
+[  204.537226] dc_write_immediate: 0x000b6650 = 0x00000001
+[  204.537230] dc_isr: data lost intr for wb1
+[  204.537232] vs_writeback_handle_vblank: connector_id=1 armed=1
+[  204.537243] dc_read_immediate: 0x000b5840 = 0x00000000
+[  204.537246] dc_write_immediate: 0x000b5840 = 0x00000000
+[  204.537249] wb_set_fb_v2: set post wb 1 fb
+[  204.537257] dc_read_immediate: 0x0008317c = 0x00000003
+[  204.537260] dc_write_immediate: 0x0008317c = 0x00000000
+[  204.537263] dc_write: 0x000b5844 = 0x00000000
+[  204.537275] dc_read_immediate: 0x000b5840 = 0x00000000
+[  204.537278] dc_write_immediate: 0x000b5840 = 0x00000001
+[  204.537281] dc_write_immediate: 0x000b6650 = 0x00000001
+[  238.458259] dc_read_immediate: 0x00000024 = 0x00000000
+[  238.458284] dc_read_immediate: 0x0000201c = 0x00000000
+[  238.458295] dc_read_immediate: 0x0000241c = 0x00000000
+[  238.458304] dc_read_immediate: 0x0000281c = 0x00000000
+[  238.458313] dc_read_immediate: 0x00002c1c = 0x00000000
+[  238.458321] dc_read_immediate: 0x0000301c = 0x00000000
+[  238.458330] dc_read_immediate: 0x0000341c = 0x00000000
+[  238.458338] dc_read_immediate: 0x00040024 = 0x00000000
+[  238.458347] dc_read_immediate: 0x0004201c = 0x00000000
+[  238.458355] dc_read_immediate: 0x0004241c = 0x00000000
+[  238.458363] dc_read_immediate: 0x0004281c = 0x00000000
+[  238.458372] dc_read_immediate: 0x00042c1c = 0x00000000
+[  238.458380] dc_read_immediate: 0x0004301c = 0x00000000
+[  238.458388] dc_read_immediate: 0x0004341c = 0x00000000
+[  238.458396] dc_read_immediate: 0x00083464 = 0x00000002
+[  238.458399] dc_write_immediate: 0x00083464 = 0x00000002
+[  238.458410] dc_read_immediate: 0x0008374c = 0x00000000
+[  238.458418] dc_read_immediate: 0x00083a34 = 0x00000000
+[  238.458426] dc_read_immediate: 0x00083d1c = 0x00000000
+[  238.458435] dc_read_immediate: 0x00082bbc = 0x00000000
+[  238.458443] dc_read_immediate: 0x00080008 = 0x00000000
+[  238.458451] dc_read_immediate: 0x00080008 = 0x00000000
+[  238.458454] dc_isr: frm_start=0x0 frm_done=0x1 wb_frm_done=0x0
+[  238.505263] dc_read_immediate: 0x00000024 = 0x00000000
+[  238.505289] dc_read_immediate: 0x0000201c = 0x00000000
+[  238.505300] dc_read_immediate: 0x0000241c = 0x00000000
+[  238.505309] dc_read_immediate: 0x0000281c = 0x00000000
+[  238.505318] dc_read_immediate: 0x00002c1c = 0x00000000
+[  238.505326] dc_read_immediate: 0x0000301c = 0x00000000
+[  238.505334] dc_read_immediate: 0x0000341c = 0x00000000
+[  238.505342] dc_read_immediate: 0x00040024 = 0x00000000
+[  238.505351] dc_read_immediate: 0x0004201c = 0x00000000
+[  238.505360] dc_read_immediate: 0x0004241c = 0x00000000
+[  238.505368] dc_read_immediate: 0x0004281c = 0x00000000
+[  238.505376] dc_read_immediate: 0x00042c1c = 0x00000000
+[  238.505385] dc_read_immediate: 0x0004301c = 0x00000000
+[  238.505393] dc_read_immediate: 0x0004341c = 0x00000000
+[  238.505401] dc_read_immediate: 0x00083464 = 0x00000001
+[  238.505404] dc_write_immediate: 0x00083464 = 0x00000001
+[  238.505415] dc_read_immediate: 0x0008374c = 0x00000000
+[  238.505423] dc_read_immediate: 0x00083a34 = 0x00000000
+[  238.505431] dc_read_immediate: 0x00083d1c = 0x00000000
+[  238.505439] dc_read_immediate: 0x00082bbc = 0x00000000
+[  238.505448] dc_read_immediate: 0x00080008 = 0x00000000
+[  238.505456] dc_read_immediate: 0x00080008 = 0x00000000
+[  238.505459] dc_isr: frm_start=0x1 frm_done=0x0 wb_frm_done=0x0
+[  272.426643] dc_read_immediate: 0x00000024 = 0x00000000
+[  272.426667] dc_read_immediate: 0x0000201c = 0x00000000
+[  272.426677] dc_read_immediate: 0x0000241c = 0x00000000
+[  272.426685] dc_read_immediate: 0x0000281c = 0x00000000
+[  272.426693] dc_read_immediate: 0x00002c1c = 0x00000000
+[  272.426701] dc_read_immediate: 0x0000301c = 0x00000000
+[  272.426709] dc_read_immediate: 0x0000341c = 0x00000000
+[  272.426717] dc_read_immediate: 0x00040024 = 0x00000000
+[  272.426725] dc_read_immediate: 0x0004201c = 0x00000000
+[  272.426733] dc_read_immediate: 0x0004241c = 0x00000000
+[  272.426741] dc_read_immediate: 0x0004281c = 0x00000000
+[  272.426749] dc_read_immediate: 0x00042c1c = 0x00000000
+[  272.426757] dc_read_immediate: 0x0004301c = 0x00000000
+[  272.426764] dc_read_immediate: 0x0004341c = 0x00000000
+[  272.426772] dc_read_immediate: 0x00083464 = 0x00000002
+[  272.426775] dc_write_immediate: 0x00083464 = 0x00000002
+[  272.426786] dc_read_immediate: 0x0008374c = 0x00000000
+[  272.426793] dc_read_immediate: 0x00083a34 = 0x00000000
+[  272.426801] dc_read_immediate: 0x00083d1c = 0x00000000
+[  272.426809] dc_read_immediate: 0x00082bbc = 0x00000000
+[  272.426817] dc_read_immediate: 0x00080008 = 0x00000000
+[  272.426825] dc_read_immediate: 0x00080008 = 0x00000000
+[  272.426828] dc_isr: frm_start=0x0 frm_done=0x1 wb_frm_done=0x0
+[  272.473699] dc_read_immediate: 0x00000024 = 0x00000000
+[  272.473724] dc_read_immediate: 0x0000201c = 0x00000000
+[  272.473735] dc_read_immediate: 0x0000241c = 0x00000000
+[  272.473744] dc_read_immediate: 0x0000281c = 0x00000000
+[  272.473752] dc_read_immediate: 0x00002c1c = 0x00000000
+[  272.473760] dc_read_immediate: 0x0000301c = 0x00000000
+[  272.473769] dc_read_immediate: 0x0000341c = 0x00000000
+[  272.473777] dc_read_immediate: 0x00040024 = 0x00000000
+[  272.473786] dc_read_immediate: 0x0004201c = 0x00000000
+[  272.473794] dc_read_immediate: 0x0004241c = 0x00000000
+[  272.473802] dc_read_immediate: 0x0004281c = 0x00000000
+[  272.473811] dc_read_immediate: 0x00042c1c = 0x00000000
+[  272.473819] dc_read_immediate: 0x0004301c = 0x00000000
+[  272.473827] dc_read_immediate: 0x0004341c = 0x00000000
+[  272.473835] dc_read_immediate: 0x00083464 = 0x00000001
+[  272.473838] dc_write_immediate: 0x00083464 = 0x00000001
+[  272.473849] dc_read_immediate: 0x0008374c = 0x00000000
+[  272.473857] dc_read_immediate: 0x00083a34 = 0x00000000
+[  272.473865] dc_read_immediate: 0x00083d1c = 0x00000000
+[  272.473873] dc_read_immediate: 0x00082bbc = 0x00000000
+[  272.473882] dc_read_immediate: 0x00080008 = 0x00000000
+[  272.473890] dc_read_immediate: 0x00080008 = 0x00000000
+[  272.473893] dc_isr: frm_start=0x1 frm_done=0x0 wb_frm_done=0x0
+[  303.913566] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  303.913571] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  303.913572] vs_dc_vrr_compute_config: vs_crtc_state->vrr vmin: 2237, vmax: 2796, enable: 0
+[  303.913573] vs_dc_splice_compute_config, vs_crtc_state->splice_crtc_mask: 0x0, dc_info->splice_version: 0
+[  303.913574] vs_dc_vrr_compute_config: vs_crtc_state->vrr vmin: 2237, vmax: 2796, enable: 0
+[  303.913576] vs_dc_check_display: panel scale enable: 0
+[  303.913577] vs_dc_check_display: panel scale enable: 0
+[  303.913578] vs_dc_check_display: panel scale enable: 0
+[  303.913582] dc_read: 0x000b60e8 = 0x00000000
+[  303.913584] dc_read: 0x000b60e8 = 0x00000000
+[  303.913593] dc_read_immediate: 0x000b5080 = 0x00000000
+[  303.913593] dc_write_immediate: 0x000b5080 = 0x00000000
+[  303.913594] wb_set_fb_v2: set post wb 0 fb
+[  303.913601] dc_read_immediate: 0x00082e94 = 0x00000000
+[  303.913602] dc_write_immediate: 0x00082e94 = 0x00000003
+[  303.913603] dc_read: 0x000b50a4 = 0x00000000
+[  303.913603] dc_write: 0x000b50a4 = 0x00000000
+[  303.913605] dc_write: 0x000b50ac = 0x00000000
+[  303.913606] dc_write: 0x000b5088 = 0x00003c00
+[  303.913607] dc_write: 0x000b5120 = 0x00000000
+[  303.913607] dc_write: 0x000b5124 = 0x00000000
+[  303.913608] dc_write: 0x000b508c = 0x04800000
+[  303.913608] dc_write: 0x000b5090 = 0x00000001
+[  303.913609] dc_write: 0x000b5110 = 0x00000000
+[  303.913609] dc_write: 0x000b5114 = 0x00000000
+[  303.913610] dc_write: 0x000b5118 = 0x00000000
+[  303.913610] dc_write: 0x000b511c = 0x00000000
+[  303.913611] dc_write: 0x000b5084 = 0x00000001
+[  303.913611] dc_write_immediate: 0x000c5dc0 = 0x0000000b
+[  303.913635] dc_read_immediate: 0x000b5840 = 0x00000000
+[  303.913636] dc_write_immediate: 0x000b5840 = 0x00000000
+[  303.913636] wb_set_fb_v2: set post wb 1 fb
+[  303.913645] dc_read_immediate: 0x0008317c = 0x00000000
+[  303.913646] dc_write_immediate: 0x0008317c = 0x00000003
+[  303.913660] dc_write_immediate: 0x000b5000 = 0x00000001
+[  303.913661] dc_read: 0x000b5864 = 0x00000000
+[  303.913661] dc_write: 0x000b5864 = 0x00000000
+[  303.913662] dc_write: 0x000b586c = 0x00000000
+[  303.913662] dc_write: 0x000b5848 = 0x00003c00
+[  303.913663] dc_write: 0x000b58e0 = 0x00000000
+[  303.913663] dc_write: 0x000b58e4 = 0x00000000
+[  303.913664] dc_write: 0x000b584c = 0x06800000
+[  303.913665] dc_write: 0x000b5850 = 0x00000001
+[  303.913665] dc_write: 0x000b58d0 = 0x00000000
+[  303.913665] dc_write: 0x000b58d4 = 0x00000000
+[  303.913666] dc_write: 0x000b58d8 = 0x00000000
+[  303.913667] dc_write: 0x000b58dc = 0x00000000
+[  303.913667] dc_write: 0x000b5844 = 0x00000001
+[  303.913668] dc_write_immediate: 0x000c5ee0 = 0x00000007
+[  303.913668] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  303.913669] update_display_std_splice: display0 splice: 0, enable: 0
+[  303.913670] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  303.913670] update_display_std_splice: display1 splice: 0, enable: 0
+[  303.913671] update_display_vrr: display->vrr max_delay: 0, enable: 0
+[  303.913672] update_display_std_splice: display2 splice: 0, enable: 0
+[  303.913693] dc_read_immediate: 0x00010000 = 0x00000000
+[  303.913693] dc_write_immediate: 0x00010000 = 0x00000000
+[  303.913701] dc_read_immediate: 0x0008c000 = 0x00000000
+[  303.913701] dc_write_immediate: 0x0008c000 = 0x00000000
+[  303.913709] dc_read_immediate: 0x000b6270 = 0x00000000
+[  303.913709] dc_write_immediate: 0x000b6270 = 0x00000000
+[  303.913711] dc_write_immediate: 0x000b60f4 = 0x00000000
+[  303.913712] vs_dpu_reg_cache_update, entry_count: 0, [0x000b6344, 0x00000004].
+[  303.913713] vs_dpu_reg_cache_update, entry_count: 0, [0x000b6724, 0x00000005].
+[  303.913713] vs_dpu_reg_cache_update, entry_count: 0, [0x000b6b04, 0x00000006].
+[  303.913714] vs_dpu_reg_cache_update, entry_count: 0, [0x000b6ee4, 0x00000004].
+[  303.913714] vs_dpu_reg_cache_update, entry_count: 0, [0x00000000, 0x00000000].
+[  303.913715] vs_dpu_reg_cache_update, entry_count: 1, [0x000c5010, 0x00000000].
+[  303.913721] dc_read_immediate: 0x00010000 = 0x00000000
+[  303.913721] dc_write_immediate: 0x00010000 = 0x00000001
+[  303.913729] dc_read_immediate: 0x0008c000 = 0x00000000
+[  303.913730] dc_write_immediate: 0x0008c000 = 0x00000001
+[  303.913737] dc_read_immediate: 0x000b6270 = 0x00000000
+[  303.913738] dc_write_immediate: 0x000b6270 = 0x00000001
+[  303.913738] vs_dc_commit_non_shadow_reg_cache: waitting display 0 frm done
+[  306.394862] dc_read_immediate: 0x00000024 = 0x00000000
+[  306.394887] dc_read_immediate: 0x0000201c = 0x00000000
+[  306.394898] dc_read_immediate: 0x0000241c = 0x00000000
+[  306.394907] dc_read_immediate: 0x0000281c = 0x00000000
+[  306.394916] dc_read_immediate: 0x00002c1c = 0x00000000
+[  306.394924] dc_read_immediate: 0x0000301c = 0x00000000
+[  306.394932] dc_read_immediate: 0x0000341c = 0x00000000
+[  306.394940] dc_read_immediate: 0x00040024 = 0x00000000
+[  306.394949] dc_read_immediate: 0x0004201c = 0x00000000
+[  306.394957] dc_read_immediate: 0x0004241c = 0x00000000
+[  306.394966] dc_read_immediate: 0x0004281c = 0x00000000
+[  306.394974] dc_read_immediate: 0x00042c1c = 0x00000000
+[  306.394982] dc_read_immediate: 0x0004301c = 0x00000000
+[  306.394990] dc_read_immediate: 0x0004341c = 0x00000000
+[  306.394998] dc_read_immediate: 0x00083464 = 0x00000002
+[  306.395002] dc_write_immediate: 0x00083464 = 0x00000002
+[  306.395012] dc_read_immediate: 0x0008374c = 0x00000000
+[  306.395021] dc_read_immediate: 0x00083a34 = 0x00000000
+[  306.395029] dc_read_immediate: 0x00083d1c = 0x00000000
+[  306.395037] dc_read_immediate: 0x00082bbc = 0x00000000
+[  306.395045] dc_read_immediate: 0x00082e98 = 0x00000000
+[  306.395053] dc_read_immediate: 0x00083180 = 0x00000000
+[  306.395062] dc_read_immediate: 0x00080008 = 0x00000000
+[  306.395070] dc_read_immediate: 0x00080008 = 0x00000000
+[  306.395073] dc_isr: frm_start=0x0 frm_done=0x1 wb_frm_done=0x0
+[  306.395168] vs_dc_commit_non_shadow_reg_cache: committing display 0 non shadow reg cache
+[  306.395187] vs_dpu_reg_cache_commit: i = 0, 0x000b6344 = 0x00000004
+[  306.395195] vs_dpu_reg_cache_commit: i = 1, 0x000c5010 = 0x00000000
+[  306.395201] dc_write_immediate: 0x000b6104 = 0x00000002
+[  306.395212] dc_read_immediate: 0x000c5014 = 0x00000000
+[  306.395220] dc_read_immediate: 0x000909bc = 0x00000000
+[  306.395228] dc_read_immediate: 0x00083464 = 0x00000000
+[  306.395232] dc_write_immediate: 0x00083464 = 0x00000001
+[  306.395235] dc_write_immediate: 0x000c5004 = 0x00004320
+[  306.395239] dc_write_immediate: 0x000b6080 = 0x00000001
+[  306.395254] dc_read_immediate: 0x00014000 = 0x00000000
+[  306.395257] dc_write_immediate: 0x00014000 = 0x00000000
+[  306.395267] dc_read_immediate: 0x00020000 = 0x00000000
+[  306.395270] dc_write_immediate: 0x00020000 = 0x00000000
+[  306.395280] dc_read_immediate: 0x000b5840 = 0x00000000
+[  306.395283] dc_write_immediate: 0x000b5840 = 0x00000000
+[  306.395294] dc_read_immediate: 0x0009c000 = 0x00000000
+[  306.395297] dc_write_immediate: 0x0009c000 = 0x00000000
+[  306.395307] dc_read_immediate: 0x000b6650 = 0x00000001
+[  306.395310] dc_write_immediate: 0x000b6650 = 0x00000000
+[  306.395317] dc_write_immediate: 0x000b64d4 = 0x00000000
+[  306.395327] dc_read_immediate: 0x00014000 = 0x00000000
+[  306.395330] dc_write_immediate: 0x00014000 = 0x00000001
+[  306.395341] dc_read_immediate: 0x00020000 = 0x00000000
+[  306.395344] dc_write_immediate: 0x00020000 = 0x00000001
+[  306.395354] dc_read_immediate: 0x000b5840 = 0x00000000
+[  306.395357] dc_write_immediate: 0x000b5840 = 0x00000001
+[  306.395361] dc_write_immediate: 0x000b6650 = 0x00000001
+[  306.395371] dc_read_immediate: 0x0009c000 = 0x00000000
+[  306.395375] dc_write_immediate: 0x0009c000 = 0x00000001
+[  306.395386] dc_read_immediate: 0x000b6650 = 0x00000001
+[  306.395389] dc_write_immediate: 0x000b6650 = 0x00000001
+[  306.395392] vs_dc_commit_non_shadow_reg_cache: committing display 1 non shadow reg cache
+[  306.395396] vs_dpu_reg_cache_commit: i = 0, 0x000b6724 = 0x00000005
+[  306.395400] dc_write_immediate: 0x000b6104 = 0x00000002
+[  306.395410] dc_read_immediate: 0x000c5014 = 0x00000000
+[  306.395418] dc_read_immediate: 0x000909bc = 0x00000000
+[  306.395429] dc_read: 0x000b64c8 = 0x00000000
+[  306.395440] dc_read_immediate: 0x00083748 = 0x00000000
+[  306.395443] dc_write_immediate: 0x00083748 = 0x00000007
+[  306.395453] dc_read_immediate: 0x00080004 = 0x00000000
+[  306.395456] dc_write_immediate: 0x00080004 = 0x00000020
+[  306.395460] dc_read: 0x000b64c8 = 0x00000000
+[  306.395469] dc_read_immediate: 0x0008374c = 0x00000000
+[  306.395472] dc_write_immediate: 0x0008374c = 0x00000001
+[  306.395475] dc_write_immediate: 0x000c5004 = 0x00004320
+[  306.395478] dc_write_immediate: 0x000b6460 = 0x00000001
+[  306.395488] dc_read_immediate: 0x00018000 = 0x00000000
+[  306.395492] dc_write_immediate: 0x00018000 = 0x00000000
+[  306.395502] dc_read_immediate: 0x000b5080 = 0x00000000
+[  306.395506] dc_write_immediate: 0x000b5080 = 0x00000000
+[  306.395516] dc_read_immediate: 0x000ac000 = 0x00000000
+[  306.395519] dc_write_immediate: 0x000ac000 = 0x00000000
+[  306.395530] dc_read_immediate: 0x000b6a30 = 0x00000001
+[  306.395534] dc_write_immediate: 0x000b6a30 = 0x00000000
+[  306.395539] dc_write_immediate: 0x000b68b4 = 0x00000000
+[  306.395549] dc_read_immediate: 0x00018000 = 0x00000000
+[  306.395552] dc_write_immediate: 0x00018000 = 0x00000001
+[  306.395562] dc_read_immediate: 0x000b5080 = 0x00000000
+[  306.395565] dc_write_immediate: 0x000b5080 = 0x00000001
+[  306.395568] dc_write_immediate: 0x000b6650 = 0x00000001
+[  306.395578] dc_read_immediate: 0x000ac000 = 0x00000000
+[  306.395581] dc_write_immediate: 0x000ac000 = 0x00000001
+[  306.395591] dc_read_immediate: 0x000b6a30 = 0x00000000
+[  306.395594] dc_write_immediate: 0x000b6a30 = 0x00000001
+[  306.395597] vs_dc_commit_non_shadow_reg_cache: committing display 2 non shadow reg cache
+[  306.395600] vs_dpu_reg_cache_commit: i = 0, 0x000b6b04 = 0x00000006
+[  306.395603] dc_write_immediate: 0x000b6104 = 0x00000002
+[  306.395616] dc_read_immediate: 0x000c5014 = 0x00000000
+[  306.395627] dc_read_immediate: 0x000909bc = 0x00000000
+[  306.395634] dc_read: 0x000b68a8 = 0x00000000
+[  306.395647] dc_read_immediate: 0x00083a30 = 0x00000000
+[  306.395644] dc_read_immediate: 0x00000024 = 0x00000000
+[  306.395653] dc_write_immediate: 0x00083a30 = 0x00000007
+[  306.395666] dc_read_immediate: 0x00080004 = 0x00000020
+[  306.395671] dc_read_immediate: 0x0000201c = 0x00000000
+[  306.395673] dc_write_immediate: 0x00080004 = 0x00000020
+[  306.395679] dc_read: 0x000b68a8 = 0x00000000
+[  306.395685] dc_read_immediate: 0x0000241c = 0x00000000
+[  306.395690] dc_read_immediate: 0x00083a34 = 0x00000000
+[  306.395695] dc_read_immediate: 0x0000281c = 0x00000000
+[  306.395696] dc_write_immediate: 0x00083a34 = 0x00000001
+[  306.395702] dc_write_immediate: 0x000c5004 = 0x00004320
+[  306.395708] dc_write_immediate: 0x000b6840 = 0x00000001
+[  306.395709] dc_read_immediate: 0x00002c1c = 0x00000000
+[  306.395718] dc_read_immediate: 0x0000301c = 0x00000000
+[  306.395728] dc_read_immediate: 0x0000341c = 0x00000000
+[  306.395738] dc_read_immediate: 0x00040024 = 0x00000000
+[  306.395748] dc_read_immediate: 0x0004201c = 0x00000000
+[  306.395757] dc_read_immediate: 0x0004241c = 0x00000000
+[  306.395766] dc_read_immediate: 0x0004281c = 0x00000000
+[  306.395775] dc_read_immediate: 0x00042c1c = 0x00000000
+[  306.395784] dc_read_immediate: 0x0004301c = 0x00000000
+[  306.395793] dc_read_immediate: 0x0004341c = 0x00000000
+[  306.395803] dc_read_immediate: 0x00083464 = 0x00000000
+[  306.395812] dc_read_immediate: 0x0008374c = 0x00000001
+[  306.395816] dc_write_immediate: 0x0008374c = 0x00000001
+[  306.395827] dc_read_immediate: 0x00083a34 = 0x00000001
+[  306.395831] dc_write_immediate: 0x00083a34 = 0x00000001
+[  306.395842] dc_read_immediate: 0x00083d1c = 0x00000000
+[  306.395851] dc_read_immediate: 0x00082bbc = 0x00000000
+[  306.395860] dc_read_immediate: 0x00082e98 = 0x00000000
+[  306.395869] dc_read_immediate: 0x00083180 = 0x00000000
+[  306.395878] dc_read_immediate: 0x00080008 = 0x00000000
+[  306.395888] dc_read_immediate: 0x00080008 = 0x00000000
+[  306.395891] dc_isr: frm_start=0x6 frm_done=0x0 wb_frm_done=0x0
+[  306.441855] dc_read_immediate: 0x00000024 = 0x00000000
+[  306.441877] dc_read_immediate: 0x0000201c = 0x00000000
+[  306.441887] dc_read_immediate: 0x0000241c = 0x00000000
+[  306.441896] dc_read_immediate: 0x0000281c = 0x00000000
+[  306.441905] dc_read_immediate: 0x00002c1c = 0x00000000
+[  306.441913] dc_read_immediate: 0x0000301c = 0x00000000
+[  306.441921] dc_read_immediate: 0x0000341c = 0x00000000
+[  306.441930] dc_read_immediate: 0x00040024 = 0x00000000
+[  306.441938] dc_read_immediate: 0x0004201c = 0x00000000
+[  306.441947] dc_read_immediate: 0x0004241c = 0x00000000
+[  306.441955] dc_read_immediate: 0x0004281c = 0x00000000
+[  306.441963] dc_read_immediate: 0x00042c1c = 0x00000000
+[  306.441972] dc_read_immediate: 0x0004301c = 0x00000000
+[  306.441980] dc_read_immediate: 0x0004341c = 0x00000000
+[  306.441988] dc_read_immediate: 0x00083464 = 0x00000001
+[  306.441991] dc_write_immediate: 0x00083464 = 0x00000001
+[  306.442002] dc_read_immediate: 0x0008374c = 0x00000000
+[  306.442010] dc_read_immediate: 0x00083a34 = 0x00000000
+[  306.442018] dc_read_immediate: 0x00083d1c = 0x00000000
+[  306.442026] dc_read_immediate: 0x00082bbc = 0x00000000
+[  306.442035] dc_read_immediate: 0x00082e98 = 0x00000000
+[  306.442043] dc_read_immediate: 0x00083180 = 0x00000000
+[  306.442051] dc_read_immediate: 0x00080008 = 0x00000000
+[  306.442059] dc_read_immediate: 0x00080008 = 0x00000000
+[  306.442062] dc_isr: frm_start=0x1 frm_done=0x0 wb_frm_done=0x0
