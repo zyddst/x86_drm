@@ -1,0 +1,8 @@
+auto_cases/layer_switch/layer_switch_pane0_to_pane1_refresh_switch.json
+auto_cases/scenario/scenario5_crtc0_1.splice_8k.json
+auto_cases/scenario/scenario5_crtc0_1_2.splice_12k.json
+auto_cases/scenario/scenario5_crtc0_1_2_3.splice_16k.json
+auto_cases/scenario/scenario5_crtc1_2_3.splice_12k.json
+auto_cases/scenario/scenario11_multiframe_crtc0_1_2.splice_12k.json
+auto_cases/scenario/scenario12_layer_640x480_panel_1920x1080.json
+multiFrame_12plane_2crtc_2wb_allpipe_3840x2160_with_dec400a.json

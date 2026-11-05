@@ -1,0 +1,44 @@
+{
+  "plane": {
+    "0": {
+      "crtc": 0,
+      "format": "AR24",
+      "resource": "defaultPattern",
+      "decType": "NONE",
+      "tileMode": "LINEAR",
+      "width": 640,
+      "height": 480,
+      "refresh": 60,
+      "crtcX": 0,
+      "crtcY": 0,
+      "crtcWidth": 640,
+      "crtcHeight": 480
+    }
+  },
+  "connector": {
+    "0": {
+      "crtc": 0,
+      "format": "AR24",
+      "tileMode": "LINEAR",
+      "width": 1920,
+      "height": 1080,
+      "refresh": 60,
+      "golden": {
+        "md5sum": "9ab67cc4acf5c0b1fab5f06b77dc958f",
+        "crc": "not_support"
+      }
+    }
+  },
+  "crtc": {
+    "0": {
+      "property": {
+        "BG_COLOR": {
+          "a": 0,
+          "r": 0,
+          "g": 0,
+          "b": 16777215
+        }
+      }
+	}
+  }
+}

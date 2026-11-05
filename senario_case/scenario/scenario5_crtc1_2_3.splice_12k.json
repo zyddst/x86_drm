@@ -1,0 +1,292 @@
+{
+  "plane": {
+    "1": {
+      "crtc": 1,
+      "format": "AR24",
+      "resource": "3840x2160_a8r8g8b8_tile32x8_yuvtransform0.raw",
+      "decType": "DEC400A",
+      "tileMode": "TILE_32X8_A",
+      "width": 3840,
+      "height": 2160,
+      "refresh": 60,
+      "crtcX": 0,
+      "crtcY": 0,
+      "crtcWidth": 3840,
+      "crtcHeight": 2160,
+      "yuv_transform": 0,
+      "property": {
+        "HDR_UNION": {
+          "hdr_enable": 1,
+          "de_multiply": 0,
+          "eotf": {
+            "eotf_enable": 1,
+            "eotf_mode": "HLG",
+            "eotf_Programmable": "NONE"
+          },
+          "gamut": {
+            "gamut_enable": 1,
+            "gamut_mode": "2020TO709",
+            "gamut_Programmable": "NONE"
+          },
+          "tonemapping": {
+            "tonemapping_enable": 1,
+            "y_gamut": "Rec2020",
+            "y_mode": "Luma",
+            "y_weight": 0,
+            "tonemapping_maxCLL": 1000,
+            "tonemapping_maxDLL": 100,
+            "tonemapping_sdr_in_hdr_max_luminance": 0,
+            "tonemapping_algo": "Mobius",
+            "hdr_standard": "HDR_vivid",
+            "tonemapping_Programmable": "NONE"
+          },
+          "oetf": {
+            "oetf_enable": 1,
+            "oetf_mode": "ReGamma2.2",
+            "oetf_Programmable": "NONE"
+          }
+        }
+      }
+    },
+    "2": {
+      "crtc": 2,
+      "format": "AR24",
+      "resource": "3840x2160_a8r8g8b8_tile32x8_yuvtransform0.raw",
+      "decType": "DEC400A",
+      "tileMode": "TILE_32X8_A",
+      "width": 3840,
+      "height": 2160,
+      "refresh": 60,
+      "crtcX": 0,
+      "crtcY": 0,
+      "crtcWidth": 3840,
+      "crtcHeight": 2160,
+      "yuv_transform": 0,
+      "property": {
+        "LAYER_DEGAMMA": {
+          "mode": "DeGamma2.2"
+        },
+        "LAYER_CCM": {
+          "mode": "sRGBTOP3"
+        },
+        "LAYER_GAMMA": {
+          "mode": "ReGamma2.2"
+        }
+      }
+    },
+    "3": {
+      "crtc": 3,
+      "format": "AR24",
+      "resource": "3840x2160_a8r8g8b8_tile32x8_yuvtransform0.raw",
+      "decType": "DEC400A",
+      "tileMode": "TILE_32X8_A",
+      "width": 3840,
+      "height": 2160,
+      "refresh": 60,
+      "crtcX": 0,
+      "crtcY": 0,
+      "crtcWidth": 3840,
+      "crtcHeight": 2160,
+      "yuv_transform": 0,
+      "property": {
+        "LAYER_DEGAMMA": {
+          "mode": "DeGamma2.2"
+        },
+        "LAYER_CCM": {
+          "mode": "sRGBTOP3"
+        },
+        "LAYER_GAMMA": {
+          "mode": "ReGamma2.2"
+        }
+      }
+    }
+  },
+  "connector": {
+    "4": {
+      "crtc": 1,
+      "format": "AR24",
+      "tileMode": "LINEAR",
+      "width": 11520,
+      "height": 2160,
+      "refresh": 30,
+      "golden": {
+        "md5sum": "not_support",
+        "crc": "not_support"
+      }
+    },
+    "5": {
+      "crtc": 2,
+      "format": "AR24",
+      "tileMode": "LINEAR",
+      "width": 3840,
+      "height": 2160,
+      "refresh": 60,
+      "golden": {
+        "md5sum": "not_support",
+        "crc": "not_support"
+      }
+    },
+    "6": {
+      "crtc": 3,
+      "format": "AR24",
+      "tileMode": "LINEAR",
+      "width": 3840,
+      "height": 2160,
+      "refresh": 60,
+      "golden": {
+        "md5sum": "not_support",
+        "crc": "not_support"
+      }
+    }
+  },
+  "crtc": {
+    "1": {
+      "property": {
+        "SPLICE_MODE": {
+          "spliceExEnable": 1,
+          "spliceDestEnableMask": "ofifo1, ofifo2, ofifo3",
+          "spliceExDest": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "spliceExSrcPanelWidth": [
+            0,
+            3840,
+            3840,
+            3840
+          ],
+          "spliceExSrcPanelHeight": [
+            0,
+            2160,
+            2160,
+            2160
+          ]
+        },
+        "PRIOR_3DLUT": {
+          "mode": "sRGBtoP3_CCM"
+        },
+        "DEGAMMA": {
+          "mode": "DeGamma2.2"
+        },
+        "CCM_LNR": {
+          "mode": "sRGBTOP3"
+        },
+        "PRIOR_GAMMA": {
+          "mode": "ReGamma2.2"
+        },
+        "GAMMA_DITHER": {
+          "index_type": 0,
+          "sw_index": 0,
+          "table_low": [
+            2562581776,
+            986306598,
+            1894013137
+          ],
+          "table_high": [
+            1674212594,
+            1098604272,
+            2946220643
+          ]
+        },
+        "PANEL_DITHER": {
+          "index_type": 1,
+          "sw_index": 0,
+          "table_low": [
+            1850516096,
+            1850516096,
+            1850516096
+          ],
+          "table_high": [
+            1568641459,
+            1568641459,
+            1568641459
+          ]
+        }
+      }
+    },
+    "2": {
+      "property": {
+        "DEGAMMA": {
+          "mode": "DeGamma2.2"
+        },
+        "CCM_LNR": {
+          "mode": "sRGBTOP3"
+        },
+        "PRIOR_GAMMA": {
+          "mode": "ReGamma2.2"
+        },
+        "GAMMA_DITHER": {
+          "index_type": 0,
+          "sw_index": 0,
+          "table_low": [
+            2562581776,
+            986306598,
+            1894013137
+          ],
+          "table_high": [
+            1674212594,
+            1098604272,
+            2946220643
+          ]
+        },
+        "PANEL_DITHER": {
+          "index_type": 1,
+          "sw_index": 0,
+          "table_low": [
+            1850516096,
+            1850516096,
+            1850516096
+          ],
+          "table_high": [
+            1568641459,
+            1568641459,
+            1568641459
+          ]
+        }
+      }
+    },
+    "3": {
+      "property": {
+        "DEGAMMA": {
+          "mode": "DeGamma2.2"
+        },
+        "CCM_LNR": {
+          "mode": "sRGBTOP3"
+        },
+        "PRIOR_GAMMA": {
+          "mode": "ReGamma2.2"
+        },
+        "GAMMA_DITHER": {
+          "index_type": 0,
+          "sw_index": 0,
+          "table_low": [
+            2562581776,
+            986306598,
+            1894013137
+          ],
+          "table_high": [
+            1674212594,
+            1098604272,
+            2946220643
+          ]
+        },
+        "PANEL_DITHER": {
+          "index_type": 1,
+          "sw_index": 0,
+          "table_low": [
+            1850516096,
+            1850516096,
+            1850516096
+          ],
+          "table_high": [
+            1568641459,
+            1568641459,
+            1568641459
+          ]
+        }
+      }
+    }
+  }
+}
